@@ -1,0 +1,293 @@
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe.config
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.AOIMainForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.PositionView.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.PositionModule.BigmapShowForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.ResultModule.ImageShowForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.AffineMethod.UserControl_AffineTrans_2.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.LocationUC.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Rotation.AngleAffineUC.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.MultiThresholdUC.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC_MatchResult.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinningUC.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamMaskSetting.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamSetting.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionAffineUC.AffineTrans1.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionSetting.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.RolePreviewForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.SettingForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ColorSpaceSetup.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferItem.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferPreview.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleItem.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleSetPreview.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IThresholdCtrl.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.InspectionView.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.ResultPanel.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelCreateForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelSetting.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightParamForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightSetting.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.MoveSetting.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.Preference.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.SystemSetting.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.GoldenTeach.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.VirtualSeg1Form.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.Properties.Resources.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\TestingGoogolTech.Form_Digital_IO.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.GoogolMotionForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.MotionControl.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.MapSettingForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.Recipe.RecipeSelectForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.WorkSheet.WorkSheetForm.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ToDoItemUI.resources
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\bin\Debug\Risitanse_AOI.pdb
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\bin\Debug\halcondotnet.dll
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\bin\Debug\StyleTabTable.dll
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\bin\Debug\halcondotnet.xml
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.exe
+C:\Users\User\Desktop\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.pdb
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe.config
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.exe
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.pdb
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\bin\Debug\Risitanse_AOI.pdb
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\bin\Debug\halcondotnet.dll
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\bin\Debug\halcondotnet.xml
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.AOIMainForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.PositionView.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.PositionModule.BigmapShowForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.ResultModule.ImageShowForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.AffineMethod.UserControl_AffineTrans_2.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.LocationUC.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Rotation.AngleAffineUC.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.MultiThresholdUC.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC_MatchResult.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinningUC.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamMaskSetting.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamSetting.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionAffineUC.AffineTrans1.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionSetting.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.RolePreviewForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.SettingForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ColorSpaceSetup.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferItem.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferPreview.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleItem.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleSetPreview.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IThresholdCtrl.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.InspectionView.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.ResultPanel.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelCreateForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelSetting.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightParamForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightSetting.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.MoveSetting.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.Preference.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.SystemSetting.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.GoldenTeach.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.VirtualSeg1Form.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.Properties.Resources.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\TestingGoogolTech.Form_Digital_IO.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.GoogolMotionForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.MotionControl.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.MapSettingForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.Recipe.RecipeSelectForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.WorkSheet.WorkSheetForm.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ToDoItemUI.resources
+D:\台達AOI評估案\新竹光頡科技_評估案\基板軟體程式與驗證\20180522\out-0517\Risitanse_AOI\obj\Debug\Risitanse_AOI.csproj.GenerateResource.Cache
+C:\Users\WANG\Desktop\台達電子AOI\華新科技片檢機_評估案\點膠機Based Demo\Program\Trim_out-0821\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe.config
+C:\Users\WANG\Desktop\台達電子AOI\華新科技片檢機_評估案\點膠機Based Demo\Program\Trim_out-0821\Risitanse_AOI\obj\Debug\Risitanse_AOI.exe
+C:\Users\WANG\Desktop\台達電子AOI\華新科技片檢機_評估案\點膠機Based Demo\Program\Trim_out-0821\Risitanse_AOI\obj\Debug\Risitanse_AOI.pdb
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe.config
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.exe
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.pdb
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\bin\Debug\Risitanse_AOI.pdb
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\bin\Debug\halcondotnet.dll
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\bin\Debug\halcondotnet.xml
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.csprojResolveAssemblyReference.cache
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.AOIMainForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.PositionView.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.PositionModule.BigmapShowForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.ResultModule.ImageShowForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.AffineMethod.UserControl_AffineTrans_2.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.CellMapForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.LocationUC.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Rotation.AngleAffineUC.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.MultiThresholdUC.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC_MatchResult.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinningUC.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinStainScratchRUC.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinStainScratchRUC_MatchResult.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC_MatchResult.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamMaskSetting.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamSetting.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionAffineUC.AffineTrans1.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionSetting.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.RolePreviewForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.SettingForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ColorSpaceSetup.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferItem.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferPreview.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleItem.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleSetPreview.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IThresholdCtrl.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.InspectionView.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.ResultPanel.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelCreateForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelSetting.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightParamForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightSetting.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.MoveSetting.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.Preference.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.SystemSetting.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.GoldenTeach.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.VirtualSeg1Form.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.Properties.Resources.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\TestingGoogolTech.Form_Digital_IO.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.GoogolMotionForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.MotionControl.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.MapSettingForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.Recipe.RecipeSelectForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.WorkSheet.WorkSheetForm.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ToDoItemUI.resources
+D:\Delta AOI\乾坤薄膜電感玻璃基板全自動片狀AOI檢查機\乾坤薄膜電感AOI (20180828)\Risitanse_AOI\obj\Debug\Risitanse_AOI.csproj.GenerateResource.Cache
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe.config
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Risitanse_AOI.pdb
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Automation.BDaq4.Design.dll
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Automation.BDaq4.dll
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\DataOverTcp.dll
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\DelViviLog.dll
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\halcondotnet.dll
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\IOModule.dll
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\TCPIPTool.dll
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\halcondotnet.xml
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.AOIMainForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.LaserPositionCreate.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.PositionView.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.PositionModule.BigmapShowForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.ResultModule.ImageShowForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.TCPIP4Sorter.FormTCPIPSorter.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.AffineMethod.UserControl_AffineTrans_2.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.CellMapForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.LocationUC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Rotation.AngleAffineUC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.MultiThresholdUC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.NoAlgoUC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC_MatchResult.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinningUC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinStainScratchRUC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinStainScratchRUC_MatchResult.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC_DispResult.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC_MatchResult.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamMaskSetting.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamSetting.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionAffineUC.AffineTrans1.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionSetting.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.RolePreviewForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.SettingForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ColorSpaceSetup.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferItem.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferPreview.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleItem.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleSetPreview.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IThresholdCtrl.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.InspectionView.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.ResultPanel.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelCreateForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelSetting.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightParamForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightSetting.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.MoveSetting.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.Preference.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.SystemSetting.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.GoldenTeach.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.VirtualSeg1Form.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.Properties.Resources.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\TestingGoogolTech.Form_Digital_IO.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.GoogolMotionForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.MotionControl.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.MapSettingForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.Recipe.RecipeSelectForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.WorkSheet.WorkSheetForm.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ToDoItemUI.resources
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.csproj.GenerateResource.Cache
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.exe
+G:\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.pdb
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe.config
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.exe
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.pdb
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Risitanse_AOI.exe
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Risitanse_AOI.pdb
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Automation.BDaq4.Design.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\Automation.BDaq4.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\DataOverTcp.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\DelViviLog.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\halcondotnet.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\IOModule.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\TCPIPTool.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\bin\Debug\halcondotnet.xml
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.csprojResolveAssemblyReference.cache
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.AOIMainForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.LaserPositionCreate.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.PositionView.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.PositionModule.BigmapShowForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.ResultModule.ImageShowForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.TCPIP4Sorter.FormTCPIPSorter.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.AffineMethod.UserControl_AffineTrans_2.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.CellMapForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Location.LocationUC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.LocateMethod.Rotation.AngleAffineUC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.MultiThresholdUC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.NoAlgoUC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.Thinning2UC_MatchResult.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinningUC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinStainScratchRUC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.ThinStainScratchRUC_MatchResult.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC_DispResult.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Roles.UC.TrimUC_MatchResult.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamMaskSetting.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.ParamPanels.ParamSetting.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionAffineUC.AffineTrans1.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.PositionSetting.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.RolePreviewForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.SettingForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ColorSpaceSetup.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferItem.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SettingAndRole.UC.ImageBufferPreview.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleItem.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IRoleSetPreview.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.InspectionForms.UC.IThresholdCtrl.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.InspectionView.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainPanels.ResultPanel.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelCreateForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.InspectModelSetting.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightParamForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.LightSetting.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.MoveSetting.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.MainSetting.Preference.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.SystemSetting.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.GoldenTeach.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.PositionMethod.VirtualSeg1Form.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.Properties.Resources.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\TestingGoogolTech.Form_Digital_IO.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.GoogolMotionForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Preference.UC.MotionControl.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.MapSettingForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.Recipe.RecipeSelectForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.SystemSource.WorkSheet.WorkSheetForm.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.UIControl.ToDoItemUI.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.csproj.GenerateResource.Cache
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\乾坤薄膜電感AOI (20181012)_ANDY181016_181025整合\Risitanse_AOI\obj\Debug\Risitanse_AOI.src.Modules.NewInspectModule.PatternCheck.PatternCheckUC.resources

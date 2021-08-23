@@ -1,0 +1,8 @@
+08.02.40:934	=== Info    === 	---------- Process images of first position ----------
+08.02.40:996	=== Info    === 	Start marks positioning
+08.02.41:894	=== Info    === 	Marks positioning ends
+08.02.54:160	=== Info    === 	Start tile big map.
+08.02.54:257	=== Info    === 	Tile big map ends.
+08.02.54:257	=== Info    === 	Start saving defect result.
+08.03.00:658	=== Info    === 	Save defect result ends.
+08.03.00:675	=== Info    === 	GC finish

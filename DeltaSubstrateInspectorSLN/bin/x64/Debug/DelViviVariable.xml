@@ -1,0 +1,1315 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DelViviVariable</name>
+    </assembly>
+    <members>
+        <member name="F:DelVivi.Variable.ImageColorType.GRAY">
+            <summary>
+            灰階
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ImageColorType.RGB">
+            <summary>
+            彩色
+            </summary>
+        </member>
+        <member name="T:DelVivi.Variable.ImageBitDepth">
+            <summary>
+            Image Bit Depth設定
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:DelVivi.Variable.Image_Type">
+            <summary>
+            Image Type 
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.Image_Type.ImageT">
+            <summary>
+            Template ViImage(T)
+            </summary>
+        </member>
+        <member name="T:DelVivi.Variable.IVariableEvent">
+            <summary>
+            事件控制
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.IVariable.mDescription">
+            <summary>
+            參數的描述
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.IVariable.mName">
+            <summary>
+            參數的名稱
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.IVariable.mKey">
+            <summary>
+            功能描述
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.IVariable.mUnit">
+            <summary>
+            參數的單位, 如mm,pixel...
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.IVariable.mDataType">
+            <summary>
+            參數類別 
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.IVariable.UIFactory">
+            <summary>
+            自訂UI(設定頁面擴充用) , 不overriding 此函式回傳null
+            傳回null : 設定畫面使用預設的control
+            若開發者新增型態,設定畫面中顯示的方式不適用 ,可用重載此函式得以擴充
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.IVariableEvent.RaiseEventValueChanged">
+            <summary>
+            觸發參數改變事件
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="E:DelVivi.Variable.IVariableEvent.ValueChanged">
+            <summary>
+            參數改變事件處理
+            </summary>
+        </member>
+        <member name="T:DelVivi.Variable.IVariableEvent.ValueChangedEventHandler">
+            <summary>
+            參數改變事件委派
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:DelVivi.Variable.IParameter.IsNumeric(System.Object)">
+            <summary>
+            判斷傳入物件是否為數值型態
+            </summary>
+            <param name="Expression">物件</param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.IParameter.ToNumeric(System.Object,System.Double@)">
+            <summary>
+            將傳入物件轉成數值
+            </summary>
+            <param name="Expression"></param>
+            <param name="retNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.IParameter.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            建構
+            </summary>
+            <param name="name">變數名稱</param>
+            <param name="strDescript">變數說明</param>
+            <param name="strUnit">變數單位</param>
+        </member>
+        <member name="M:DelVivi.Variable.IParameter.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:DelVivi.Variable.IParameter.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            copy Description,Key,bEnableEdit,mUnit,mName  from source 
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:DelVivi.Variable.IParameter.WriteToFile(System.String)">
+            <summary>
+            使用binary檔案模式,寫入檔案  注意需使用ReadFromFile檔案
+            function support all IParameter type value
+            </summary>
+            <param name="FileName"></param>
+        </member>
+        <member name="M:DelVivi.Variable.IParameter.ReadFromFile(System.String)">
+            <summary>
+            使用binary檔案模式,讀取檔案  注意只可讀取使用WrtieToFile存的檔案
+            function support all IParameter type value
+            </summary>
+            <param name="FileName"></param>
+        </member>
+        <member name="M:DelVivi.Variable.IImage.#ctor(System.String,System.String)">
+            <summary>
+            建構 預設size =1,1 , Gray , 8bit
+            </summary>
+            <param name="sImageName">圖片名稱</param>
+            <param name="strDescript">圖片描述</param>
+        </member>
+        <member name="M:DelVivi.Variable.IImage.#ctor(System.String,System.String,System.Int32,System.Int32,DelVivi.Variable.ImageColorType,DelVivi.Variable.ImageBitDepth)">
+            <summary>
+            建構
+            </summary>
+            <param name="sImageName">圖片名稱</param>
+            <param name="strDescript">圖片描述</param>
+            <param name="iWidth"></param>
+            <param name="iHeight"></param>
+            <param name="iColor">圖片顏色, 預設為Gray</param>
+            <param name="ibit">圖片bit數:共有8/10/12/16/24 bit可表示</param>
+        </member>
+        <member name="M:DelVivi.Variable.IImage.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>			
+        </member>
+        <member name="P:DelVivi.Variable.IImage.ImageHeight">
+            <summary>
+            ReadOnly ,, 請使用Resize改變Size
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.IImage.ImageWidth">
+            <summary>
+            ReadOnly ,, 請使用Resize改變Size
+            </summary>
+        </member>
+        <member name="T:DelVivi.Variable.ParameterType">
+            <summary>
+            參數類型
+            </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Object">
+            <summary>  掛入任何型態,socket資料交換時用,自訂Class 後new出來的的物件 </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Array1D">
+            <summary>  1D Array </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Array2D">
+            <summary>  2D Array </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Boolean">
+            <summary>  CheckBox or switch </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Integer">
+            <summary>  數值型態 int,short,byte,long </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Single">
+            <summary>  數值型態 float , double </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.ValueT">
+            <summary>  使用T產生的型態(可能非數值型態) </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.String">
+            <summary>  String  </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Script">
+            <summary>  Script 型態</summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Group">
+            <summary>  group型態, 包含變數和group的樹狀結構 </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Image">
+            <summary>  圖片 </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Enum">
+            <summary>  列舉 </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Region">
+            <summary>  Region </summary>
+        </member>
+        <member name="F:DelVivi.Variable.ParameterType.Custom">
+            <summary>  字型定義的型態 </summary>
+        </member>
+        <member name="F:DelVivi.Variable.UsageType.ReadWriteViewEdit">
+            <summary>  讀/寫/顯示與修改 EX: 正常參數</summary>
+        </member>
+        <member name="F:DelVivi.Variable.UsageType.ReadWriteView">
+            <summary>  讀/寫/顯示  EX: 運算結果 不可編輯</summary>        
+        </member>
+        <member name="F:DelVivi.Variable.UsageType.ReadWrite">
+            <summary>  讀/寫       EX: 內部使用的變數</summary>
+        </member>
+        <member name="F:DelVivi.Variable.UsageType.None">
+            <summary>  放棄使用的變數       </summary>
+        </member>
+        <member name="T:DelVivi.Variable.IntPoint">
+            <summary>
+            Structure for representing a pair of coordinates of integer type.
+            </summary>
+            
+            <remarks><para>The structure is used to store a pair of integer coordinates.</para>
+            
+            <para>Sample usage:</para>
+            <code>
+            // assigning coordinates in the constructor
+            IntPoint p1 = new IntPoint( 10, 20 );
+            // creating a point and assigning coordinates later
+            IntPoint p2;
+            p2.X = 30;
+            p2.Y = 40;
+            // calculating distance between two points
+            float distance = p1.DistanceTo( p2 );
+            </code>
+            </remarks>
+            
+        </member>
+        <member name="F:DelVivi.Variable.IntPoint.X">
+            <summary> 
+            X coordinate.
+            </summary> 
+            
+        </member>
+        <member name="F:DelVivi.Variable.IntPoint.Y">
+            <summary> 
+            Y coordinate.
+            </summary> 
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DelVivi.Variable.IntPoint"/> structure.
+            </summary>
+            
+            <param name="x">X axis coordinate.</param>
+            <param name="y">Y axis coordinate.</param>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.DistanceTo(DelVivi.Variable.IntPoint)">
+            <summary>
+            Calculate Euclidean distance between two points.
+            </summary>
+            
+            <param name="anotherPoint">Point to calculate distance to.</param>
+            
+            <returns>Returns Euclidean distance between this point and
+            <paramref name="anotherPoint"/> points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.SquaredDistanceTo(DelVivi.Variable.Point)">
+            <summary>
+            Calculate squared Euclidean distance between two points.
+            </summary>
+            
+            <param name="anotherPoint">Point to calculate distance to.</param>
+            
+            <returns>Returns squared Euclidean distance between this point and
+            <paramref name="anotherPoint"/> points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Addition(DelVivi.Variable.IntPoint,DelVivi.Variable.IntPoint)">
+            <summary>
+            Addition operator - adds values of two points.
+            </summary>
+            
+            <param name="point1">First point for addition.</param>
+            <param name="point2">Second point for addition.</param>
+            
+            <returns>Returns new point which coordinates equal to sum of corresponding
+            coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.Add(DelVivi.Variable.IntPoint,DelVivi.Variable.IntPoint)">
+            <summary>
+            Addition operator - adds values of two points.
+            </summary>
+            
+            <param name="point1">First point for addition.</param>
+            <param name="point2">Second point for addition.</param>
+            
+            <returns>Returns new point which coordinates equal to sum of corresponding
+            coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Subtraction(DelVivi.Variable.IntPoint,DelVivi.Variable.IntPoint)">
+             <summary>
+             Subtraction operator - subtracts values of two points.
+             </summary>
+             
+             <param name="point1">Point to subtract from.</param>
+             <param name="point2">Point to subtract.</param>
+             
+             <returns>Returns new point which coordinates equal to difference of corresponding
+             coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.Subtract(DelVivi.Variable.IntPoint,DelVivi.Variable.IntPoint)">
+             <summary>
+             Subtraction operator - subtracts values of two points.
+             </summary>
+             
+             <param name="point1">Point to subtract from.</param>
+             <param name="point2">Point to subtract.</param>
+             
+             <returns>Returns new point which coordinates equal to difference of corresponding
+             coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Addition(DelVivi.Variable.IntPoint,System.Int32)">
+            <summary>
+            Addition operator - adds scalar to the specified point.
+            </summary>
+            
+            <param name="point">Point to increase coordinates of.</param>
+            <param name="valueToAdd">Value to add to coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point increased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.Add(DelVivi.Variable.IntPoint,System.Int32)">
+            <summary>
+            Addition operator - adds scalar to the specified point.
+            </summary>
+            
+            <param name="point">Point to increase coordinates of.</param>
+            <param name="valueToAdd">Value to add to coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point increased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Subtraction(DelVivi.Variable.IntPoint,System.Int32)">
+            <summary>
+            Subtraction operator - subtracts scalar from the specified point.
+            </summary>
+            
+            <param name="point">Point to decrease coordinates of.</param>
+            <param name="valueToSubtract">Value to subtract from coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point decreased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.Subtract(DelVivi.Variable.IntPoint,System.Int32)">
+            <summary>
+            Subtraction operator - subtracts scalar from the specified point.
+            </summary>
+            
+            <param name="point">Point to decrease coordinates of.</param>
+            <param name="valueToSubtract">Value to subtract from coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point decreased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Multiply(DelVivi.Variable.IntPoint,System.Int32)">
+             <summary>
+             Multiplication operator - multiplies coordinates of the specified point by scalar value.
+             </summary>
+             
+             <param name="point">Point to multiply coordinates of.</param>
+             <param name="factor">Multiplication factor.</param>
+             
+             <returns>Returns new point which coordinates equal to coordinates of
+             the specified point multiplied by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.Multiply(DelVivi.Variable.IntPoint,System.Int32)">
+             <summary>
+             Multiplication operator - multiplies coordinates of the specified point by scalar value.
+             </summary>
+             
+             <param name="point">Point to multiply coordinates of.</param>
+             <param name="factor">Multiplication factor.</param>
+             
+             <returns>Returns new point which coordinates equal to coordinates of
+             the specified point multiplied by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Division(DelVivi.Variable.IntPoint,System.Int32)">
+            <summary>
+            Division operator - divides coordinates of the specified point by scalar value.
+            </summary>
+            
+            <param name="point">Point to divide coordinates of.</param>
+            <param name="factor">Division factor.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point divided by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.Divide(DelVivi.Variable.IntPoint,System.Int32)">
+            <summary>
+            Division operator - divides coordinates of the specified point by scalar value.
+            </summary>
+            
+            <param name="point">Point to divide coordinates of.</param>
+            <param name="factor">Division factor.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point divided by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Equality(DelVivi.Variable.IntPoint,DelVivi.Variable.IntPoint)">
+             <summary>
+             Equality operator - checks if two points have equal coordinates.
+             </summary>
+             
+             <param name="point1">First point to check.</param>
+             <param name="point2">Second point to check.</param>
+             
+             <returns>Returns <see langword="true"/> if coordinates of specified
+             points are equal.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Inequality(DelVivi.Variable.IntPoint,DelVivi.Variable.IntPoint)">
+             <summary>
+             Inequality operator - checks if two points have different coordinates.
+             </summary>
+             
+             <param name="point1">First point to check.</param>
+             <param name="point2">Second point to check.</param>
+             
+             <returns>Returns <see langword="true"/> if coordinates of specified
+             points are not equal.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.Equals(System.Object)">
+            <summary>
+            Check if this instance of <see cref="T:DelVivi.Variable.IntPoint"/> equal to the specified one.
+            </summary>
+            
+            <param name="obj">Another point to check equalty to.</param>
+            
+            <returns>Return <see langword="true"/> if objects are equal.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.GetHashCode">
+            <summary>
+            Get hash code for this instance.
+            </summary>
+            
+            <returns>Returns the hash code for this instance.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.op_Implicit(DelVivi.Variable.IntPoint)~DelVivi.Variable.Point">
+            <summary>
+            Implicit conversion to <see cref="T:DelVivi.Variable.Point"/>.
+            </summary>
+            
+            <param name="point">Integer point to convert to single precision point.</param>
+            
+            <returns>Returns new single precision point which coordinates are implicitly converted
+            to floats from coordinates of the specified integer point.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.ToString">
+             <summary>
+             Get string representation of the class.
+             </summary>
+             
+             <returns>Returns string, which contains values of the point in readable form.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.IntPoint.EuclideanNorm">
+            <summary>
+            Calculate Euclidean norm of the vector comprised of the point's 
+            coordinates - distance from (0, 0) in other words.
+            </summary>
+            
+            <returns>Returns point's distance from (0, 0) point.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.ViObject.#ctor(System.String,System.String,System.String,System.Object)">
+            <summary>
+            建構仔
+            </summary>
+            <param name="name">Name</param>
+            <param name="descript"></param>
+            <param name="strUnit"></param>
+            <param name="DefaultValue">連結到的Enum結構</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>	            
+        </member>
+        <member name="M:DelVivi.Variable.ViObject.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            複製資料到Destination
+            </summary>
+            <param name="Destination"></param>
+            <returns>若資料型態不同,不進行copy,傳回false</returns>
+        </member>
+        <member name="P:DelVivi.Variable.ViObject.Object">
+            <summary>
+            讀寫數值
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViObject.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的數值與設定,用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <!-- 忽略成員 "T:DelVivi.Variable.ViPoint`1" 中格式錯誤的 XML 註解 -->
+        <member name="T:DelVivi.Variable.ViArray1D`1">
+            <summary>
+            1D Array
+            </summary>
+            <typeparam name="T"> 
+            數值(int,byte,short,long,float,double)或非數值型</typeparam>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray1D`1.#ctor(System.Int32)">
+            <summary>
+            1D 陣列
+            </summary>
+            <param name="iSize">陣列長度</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray1D`1.#ctor(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            建構
+            </summary>
+            <param name="name">Caption</param>
+            <param name="descript">Description</param>
+            <param name="iSize">Array size</param>
+            <param name="strUnit">單位: mm/pixel/um...</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray1D`1.ReSize(System.Int32,System.Boolean)">
+            <summary>
+            變更Array大小,Free 舊資料,new 新Array  若size不變直接return(true)
+            </summary>
+            <param name="iSize">陣列長度</param>
+            <param name="CopyData">若為true會copy舊資料到新array</param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray1D`1.ReadArray(System.String)">
+            <summary>
+            反序列化讀檔
+            </summary>
+            <param name="FileName"></param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray1D`1.WriteArray(System.String)">
+            <summary>
+            序列化寫檔
+            </summary>
+            <param name="ImageFileName"></param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray1D`1.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            複製所有資料到Destination ,若大小不同,會重新new dest的大小
+            </summary>
+            <param name="Destination"></param>
+            <returns>若資料型態不同,不進行copy,傳回false</returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray1D`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <!-- 忽略成員 "P:DelVivi.Variable.ViArray1D`1.Object" 中格式錯誤的 XML 註解 -->
+        <member name="P:DelVivi.Variable.ViArray1D`1.Values">
+            <summary>
+            傳回Array 實際資料物件
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViArray1D`1.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的數值與設定,用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViPoint`1.#ctor(`0,`0,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="x">X axis coordinate.</param>
+            <param name="y">Y axis coordinate.</param>
+            <param name="name">Caption</param>
+            <param name="descript">Description</param>
+            <param name="strUnit">單位: mm/pixel/um...</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViPoint`1.ReSize(System.Int32,System.Boolean)">
+            <summary>
+            覆寫ViArray,避免變更大小,呼叫無效
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViPoint`1.DistanceTo(DelVivi.Variable.ViPoint{`0})">
+            <summary>
+            Sqrt( dx * dx + dy * dy )
+            </summary>
+        </member>
+        <!-- 忽略成員 "M:DelVivi.Variable.ViPoint`1.Equals(System.Object)" 中格式錯誤的 XML 註解 -->
+        <member name="M:DelVivi.Variable.ViArray2D`1.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+            2D 陣列
+            </summary>
+            <param name="iSizeX">維度1</param>
+            <param name="iSizeY">維度2</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray2D`1.#ctor(System.String,System.String,System.UInt32,System.UInt32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name">Caption</param>
+            <param name="descript">Description</param>
+            <param name="iSizeY">維度1</param>
+            <param name="iSizeX">維度2</param>
+            <param name="strUnit">單位: mm/pixel/um...</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray2D`1.ReSize(System.UInt32,System.UInt32,System.Boolean)">
+            <summary>
+            變更Array大小,Free 舊資料,new 新Array  若size不變直接return(true)
+            </summary>
+            <param name="iSizeY"></param>
+            <param name="iSizeX"></param>
+            <param name="CopyData">若為true會copy舊資料到新array</param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray2D`1.ReadArray(System.String)">
+            <summary>
+            反序列化讀檔
+            </summary>
+            <param name="FileName"></param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray2D`1.WriteArray(System.String)">
+            <summary>
+            序列化寫檔
+            </summary>
+            <param name="ImageFileName"></param>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray2D`1.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            複製所有資料到Destination ,若大小不同,會重新new dest的大小
+            </summary>
+            <param name="Destination"></param>
+            <returns>若資料型態不同,不進行copy,傳回false</returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViArray2D`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="P:DelVivi.Variable.ViArray2D`1.Object">
+            <summary>
+            讀值
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViArray2D`1.Values">
+            <summary>
+            傳回 2D Array 實際資料物件
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViArray2D`1.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的數值與設定,用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViEnum.#ctor(System.String,System.String,System.String,System.Enum)">
+            <summary>
+            建構仔
+            </summary>
+            <param name="name">Name</param>
+            <param name="descript"></param>
+            <param name="strUnit"></param>
+            <param name="DefaultValue">連結到的Enum結構</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViEnum.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>	            
+        </member>
+        <member name="M:DelVivi.Variable.ViEnum.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            複製資料 
+            </summary>
+            <param name="Destination"></param>
+            <returns>若資料型態不同,不進行copy,傳回false</returns>
+        </member>
+        <member name="P:DelVivi.Variable.ViEnum.Object">
+            <summary>
+            讀寫數值
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViEnum.Value">
+            <summary>
+            預設為True
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViEnum.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的數值與設定,用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViImage`1.ReSize(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Alloc Memory , if Size equal , return immediately
+            </summary>
+            <param name="Width"></param>
+            <param name="Height"></param>
+            <param name="ForceReAlloc">強制重新配置Memory</param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViImage`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="P:DelVivi.Variable.ViImage`1.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的影像資訊用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <member name="T:DelVivi.Variable.Point">
+            <summary>
+            Structure for representing a pair of coordinates of float type.
+            </summary>
+            
+            <remarks><para>The structure is used to store a pair of floating point
+            coordinates with single precision.</para>
+            
+            <para>Sample usage:</para>
+            <code>
+            // assigning coordinates in the constructor
+            Point p1 = new Point( 10, 20 );
+            // creating a point and assigning coordinates later
+            Point p2;
+            p2.X = 30;
+            p2.Y = 40;
+            // calculating distance between two points
+            float distance = p1.DistanceTo( p2 );
+            </code>
+            </remarks>
+            
+        </member>
+        <member name="F:DelVivi.Variable.Point.X">
+            <summary> 
+            X coordinate.
+            </summary> 
+            
+        </member>
+        <member name="F:DelVivi.Variable.Point.Y">
+            <summary> 
+            Y coordinate.
+            </summary> 
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.#ctor(System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DelVivi.Variable.Point"/> structure.
+            </summary>
+            
+            <param name="x">X axis coordinate.</param>
+            <param name="y">Y axis coordinate.</param>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.DistanceTo(DelVivi.Variable.Point)">
+            <summary>
+            Calculate Euclidean distance between two points.
+            </summary>
+            
+            <param name="anotherPoint">Point to calculate distance to.</param>
+            
+            <returns>Returns Euclidean distance between this point and
+            <paramref name="anotherPoint"/> points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.SquaredDistanceTo(DelVivi.Variable.Point)">
+            <summary>
+            Calculate squared Euclidean distance between two points.
+            </summary>
+            
+            <param name="anotherPoint">Point to calculate distance to.</param>
+            
+            <returns>Returns squared Euclidean distance between this point and
+            <paramref name="anotherPoint"/> points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Addition(DelVivi.Variable.Point,DelVivi.Variable.Point)">
+            <summary>
+            Addition operator - adds values of two points.
+            </summary>
+            
+            <param name="point1">First point for addition.</param>
+            <param name="point2">Second point for addition.</param>
+            
+            <returns>Returns new point which coordinates equal to sum of corresponding
+            coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Add(DelVivi.Variable.Point,DelVivi.Variable.Point)">
+            <summary>
+            Addition operator - adds values of two points.
+            </summary>
+            
+            <param name="point1">First point for addition.</param>
+            <param name="point2">Second point for addition.</param>
+            
+            <returns>Returns new point which coordinates equal to sum of corresponding
+            coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Subtraction(DelVivi.Variable.Point,DelVivi.Variable.Point)">
+             <summary>
+             Subtraction operator - subtracts values of two points.
+             </summary>
+             
+             <param name="point1">Point to subtract from.</param>
+             <param name="point2">Point to subtract.</param>
+             
+             <returns>Returns new point which coordinates equal to difference of corresponding
+             coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Subtract(DelVivi.Variable.Point,DelVivi.Variable.Point)">
+             <summary>
+             Subtraction operator - subtracts values of two points.
+             </summary>
+             
+             <param name="point1">Point to subtract from.</param>
+             <param name="point2">Point to subtract.</param>
+             
+             <returns>Returns new point which coordinates equal to difference of corresponding
+             coordinates of specified points.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Addition(DelVivi.Variable.Point,System.Single)">
+            <summary>
+            Addition operator - adds scalar to the specified point.
+            </summary>
+            
+            <param name="point">Point to increase coordinates of.</param>
+            <param name="valueToAdd">Value to add to coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point increased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Add(DelVivi.Variable.Point,System.Single)">
+            <summary>
+            Addition operator - adds scalar to the specified point.
+            </summary>
+            
+            <param name="point">Point to increase coordinates of.</param>
+            <param name="valueToAdd">Value to add to coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point increased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Subtraction(DelVivi.Variable.Point,System.Single)">
+            <summary>
+            Subtraction operator - subtracts scalar from the specified point.
+            </summary>
+            
+            <param name="point">Point to decrease coordinates of.</param>
+            <param name="valueToSubtract">Value to subtract from coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point decreased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Subtract(DelVivi.Variable.Point,System.Single)">
+            <summary>
+            Subtraction operator - subtracts scalar from the specified point.
+            </summary>
+            
+            <param name="point">Point to decrease coordinates of.</param>
+            <param name="valueToSubtract">Value to subtract from coordinates of the specified point.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point decreased by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Multiply(DelVivi.Variable.Point,System.Single)">
+             <summary>
+             Multiplication operator - multiplies coordinates of the specified point by scalar value.
+             </summary>
+             
+             <param name="point">Point to multiply coordinates of.</param>
+             <param name="factor">Multiplication factor.</param>
+             
+             <returns>Returns new point which coordinates equal to coordinates of
+             the specified point multiplied by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Multiply(DelVivi.Variable.Point,System.Single)">
+             <summary>
+             Multiplication operator - multiplies coordinates of the specified point by scalar value.
+             </summary>
+             
+             <param name="point">Point to multiply coordinates of.</param>
+             <param name="factor">Multiplication factor.</param>
+             
+             <returns>Returns new point which coordinates equal to coordinates of
+             the specified point multiplied by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Division(DelVivi.Variable.Point,System.Single)">
+            <summary>
+            Division operator - divides coordinates of the specified point by scalar value.
+            </summary>
+            
+            <param name="point">Point to divide coordinates of.</param>
+            <param name="factor">Division factor.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point divided by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Divide(DelVivi.Variable.Point,System.Single)">
+            <summary>
+            Division operator - divides coordinates of the specified point by scalar value.
+            </summary>
+            
+            <param name="point">Point to divide coordinates of.</param>
+            <param name="factor">Division factor.</param>
+            
+            <returns>Returns new point which coordinates equal to coordinates of
+            the specified point divided by specified value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Equality(DelVivi.Variable.Point,DelVivi.Variable.Point)">
+             <summary>
+             Equality operator - checks if two points have equal coordinates.
+             </summary>
+             
+             <param name="point1">First point to check.</param>
+             <param name="point2">Second point to check.</param>
+             
+             <returns>Returns <see langword="true"/> if coordinates of specified
+             points are equal.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Inequality(DelVivi.Variable.Point,DelVivi.Variable.Point)">
+             <summary>
+             Inequality operator - checks if two points have different coordinates.
+             </summary>
+             
+             <param name="point1">First point to check.</param>
+             <param name="point2">Second point to check.</param>
+             
+             <returns>Returns <see langword="true"/> if coordinates of specified
+             points are not equal.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Equals(System.Object)">
+            <summary>
+            Check if this instance of <see cref="T:DelVivi.Variable.Point"/> equal to the specified one.
+            </summary>
+            
+            <param name="obj">Another point to check equalty to.</param>
+            
+            <returns>Return <see langword="true"/> if objects are equal.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.GetHashCode">
+            <summary>
+            Get hash code for this instance.
+            </summary>
+            
+            <returns>Returns the hash code for this instance.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.op_Explicit(DelVivi.Variable.Point)~DelVivi.Variable.IntPoint">
+            <summary>
+            Explicit conversion to <see cref="T:DelVivi.Variable.IntPoint"/>.
+            </summary>
+            
+            <param name="point">Single precision point to convert to integer point.</param>
+            
+            <returns>Returns new integer point which coordinates are explicitly converted
+            to integers from coordinates of the specified single precision point by
+            casting float values to integers value.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.Round">
+            <summary>
+            Rounds the single precision point.
+            </summary>
+            
+            <returns>Returns new integer point, which coordinates equal to whole numbers
+            nearest to the corresponding coordinates of the single precision point.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.ToString">
+             <summary>
+             Get string representation of the class.
+             </summary>
+             
+             <returns>Returns string, which contains values of the point in readable form.</returns>
+            
+        </member>
+        <member name="M:DelVivi.Variable.Point.EuclideanNorm">
+            <summary>
+            Calculate Euclidean norm of the vector comprised of the point's 
+            coordinates - distance from (0, 0) in other words.
+            </summary>
+            
+            <returns>Returns point's distance from (0, 0) point.</returns>
+            
+        </member>
+        <member name="T:DelVivi.Variable.ViValue`1">
+            <summary>
+            Value樣板,此變數內容包含數值,最大值,最小值,增量
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DelVivi.Variable.ViValue`1.#ctor(System.String,System.String,System.String)">
+            <summary>
+            T若為數值型型態(int,byte,short,long,float,double)
+            int,byte,short,long --> mDataType = ParameterType.Integer
+            float,double        --> mDataType = ParameterType.Single
+                      上述型態 預設MaxValue = 100  MinValue=0
+            若非上述型態 mDataType = ParameterType.OtherNumberType;
+            </summary>
+            <param name="name">變數名稱,使用於UI上</param>
+            <param name="descript">變數說明,使用於UI上 預設值:typeof(T).Name</param>
+            <param name="strUnit">變數單位 預設值:""</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViValue`1.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            複製資料到Destination
+            </summary>
+            <param name="Destination"></param>
+            <returns>若資料型態不同,不進行copy,傳回false</returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViValue`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="P:DelVivi.Variable.ViValue`1.Object">
+            <summary>
+            讀寫數值
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViValue`1.Value">
+            <summary>
+            讀寫數值, 寫入時會  1.檢查數值型態 2.觸發參數改變事件
+            寫入數值型態會參考MaxValue  MinValue ,使數值介於範圍內 ,
+            寫入非數值型態,直接讀寫
+            </summary>        
+        </member>
+        <member name="P:DelVivi.Variable.ViValue`1.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的物件資訊,用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <member name="T:DelVivi.Variable.ViInt32">
+            <summary>
+            int型別數值 0~100
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViInt32.#ctor(System.String,System.String,System.String,System.Int16,System.Int16,System.Int16,System.Int16)">
+            <summary>
+            int型別數值 
+            </summary>
+            <param name="name">變數名稱</param>
+            <param name="descript">變數描述</param>
+            <param name="strUnit">變數單位,如mm</param>
+            <param name="minValue">最小值:預設值=0</param>
+            <param name="maxValue">最大值:預設值=100</param>
+        </member>
+        <member name="T:DelVivi.Variable.ViSingle">
+            <summary>
+            float型別數值 0~99999
+            </summary>
+        </member>
+        <!-- 忽略成員 "M:DelVivi.Variable.ViSingle.#ctor(System.String,System.String,System.String,System.Single,System.Single,System.Single,System.Int16)" 中格式錯誤的 XML 註解 -->
+        <member name="T:DelVivi.Variable.ViInt16">
+            <summary>
+            short型別數值 0~10000
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViInt16.#ctor(System.String,System.String,System.String,System.Int16,System.Int16,System.Int16,System.Int16)">
+            <summary>
+            short型別數值 
+            </summary>
+            <param name="name">變數名稱</param>
+            <param name="descript">變數描述</param>
+            <param name="strUnit">變數單位,如mm</param>
+            <param name="minValue">最小值:預設值=0</param>
+            <param name="maxValue">最大值:預設值=10000</param>
+            <param name="DefaultValue">預設值=1.0</param>
+            <param name="InCrement">增量值=1</param>
+        </member>
+        <member name="T:DelVivi.Variable.ViUInt16">
+            <summary>
+            UInt16型別數值 
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViUInt16.#ctor(System.String,System.String,System.String,System.UInt16,System.UInt16,System.UInt16)">
+            <summary>
+            UInt16型別數值
+            </summary>
+            <param name="name">變數名稱</param>
+            <param name="descript">變數描述</param>
+            <param name="strUnit">變數單位,如mm</param>
+            <param name="minValue">最小值:預設值=0</param>
+            <param name="maxValue">最大值:預設值=10000</param>        
+            <param name="DefaultValue">預設值=1.0</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViString.#ctor(System.String,System.String,System.String)">
+            <summary>
+            建構
+            </summary>
+            <param name="name">變數名稱</param>
+            <param name="descript">變數敘述:預設""</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViString.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            複製資料到Destination
+            </summary>
+            <param name="Destination"></param>
+            <returns>若資料型態不同,不進行copy,傳回false</returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViString.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>			
+        </member>
+        <member name="P:DelVivi.Variable.ViString.Object">
+            <summary>
+            讀寫數值
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViString.Value">
+            <summary>
+            讀寫數值
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViString.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的物件資訊用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViBool.#ctor(System.String,System.String,System.String)">
+            <summary>
+            建構
+            </summary>
+            <param name="name">Caption</param>
+            <param name="descript">Description</param>
+            <param name="strUnit">true or false:1/0"</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViBool.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>	            
+        </member>
+        <member name="M:DelVivi.Variable.ViBool.CopyFrom(DelVivi.Variable.IParameter)">
+            <summary>
+            複製資料到Destination
+            </summary>
+            <param name="Destination"></param>
+            <returns>若資料型態不同,不進行copy,傳回false</returns>
+        </member>
+        <member name="P:DelVivi.Variable.ViBool.Object">
+            <summary>
+            讀寫數值
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViBool.Value">
+            <summary>
+            預設為True
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViBool.Summarize">
+            <summary>
+            使用簡單的字串,說明目前的數值與設定,用於UI顯示 
+            唯讀屬性
+            </summary>
+        </member>
+        <member name="T:DelVivi.Variable.ViGroup">
+            <summary>
+            參數Group , 用於UI編輯/參數儲存
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.#ctor(System.String,System.String,System.String)">
+            <summary>
+            建構
+            </summary>
+            <param name="name">Caption</param>
+            <param name="descript">Description</param>
+            <param name="strUnit">變數單位:預設Group</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.CopyTo(DelVivi.Variable.IParameter)">
+            <summary>
+            Copy ViGroup的內容,注意此Function會清除與加入,所以會改變Destination 內部資料結構 (PartCopyTo不改變)
+            </summary>
+            <param name="Destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            序列化Function
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.Add(DelVivi.Variable.IParameter)">
+            <summary>
+            將繼承至IParameter物件,加到Group中
+            </summary>
+            <param name="item">可以為 IGroup , IImage , IBoolean , IInt ,ISingle, IString</param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.RemoveAt(System.Int32)">
+            <summary>
+            Remove Item in List 
+            </summary>
+            <param name="index">刪去list索引值為index的Parameter</param>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.RemoveAll">
+            <summary>
+            移除所有的Parameter
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.PartCopyTo(DelVivi.Variable.ViGroup,DelVivi.Variable.ViGroup)">
+            <summary>
+            不改變ViGroup內部資料結構下,將source與destination共有的項目,Copy到destination
+            每一個Item Copy會比較 name 與型態相同,
+            </summary>
+        </member>
+        <member name="M:DelVivi.Variable.ViGroup.ReadFromFile(System.String)">
+            <summary>
+            使用binary檔案模式,讀取檔案  注意只可讀取使用WrtieToFile存的檔案
+            function support all IParameter type value
+            </summary>
+            <param name="FileName"></param>
+        </member>
+        <member name="P:DelVivi.Variable.ViGroup.Object">
+            <summary>
+            Group內的資料List,功能同Value屬性,但需轉型
+            ReadOnly
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViGroup.Value">
+            <summary>
+            傳回Group內的資料List,ReadOnly
+            </summary>
+        </member>
+        <member name="P:DelVivi.Variable.ViGroup.Item(System.Int32)">
+            <summary>
+            傳回Group內的資料List[index]
+            </summary>
+            <param name="index">index</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

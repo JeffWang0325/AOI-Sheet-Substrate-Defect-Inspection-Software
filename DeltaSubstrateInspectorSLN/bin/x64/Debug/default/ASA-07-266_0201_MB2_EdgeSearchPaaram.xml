@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<clsEdgeSearchParaam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AlignmentType>PatternMatch</AlignmentType>
+  <Th_Low>0</Th_Low>
+  <Th_High>255</Th_High>
+  <DeNoiseSize>1</DeNoiseSize>
+  <SearchType1>Center</SearchType1>
+  <SearchType2>Center</SearchType2>
+  <OpeningSize>1</OpeningSize>
+  <ClosingSize>1</ClosingSize>
+  <TransType>convex</TransType>
+</clsEdgeSearchParaam>

@@ -1,0 +1,19 @@
+07.48.28:864	=== Info    === 	Start tile big map.
+07.48.29:161	=== Info    === 	Tile big map ends.
+07.48.29:161	=== Info    === 	Start saving defect result.
+07.48.31:646	=== Info    === 	Save defect result ends.
+07.48.31:818	=== Info    === 	Start saving AB recipe.
+07.48.31:974	=== Info    === 	Save AB recipe ends.
+07.48.32:021	=== Info    === 	GC finish
+07.52.09:721	=== Info    === 	Start tile big map.
+07.52.10:049	=== Info    === 	Tile big map ends.
+07.52.10:049	=== Info    === 	Start saving defect result.
+07.52.17:338	=== Info    === 	Save defect result ends.
+07.52.17:416	=== Info    === 	GC finish
+07.56.14:631	=== Info    === 	Start tile big map.
+07.56.14:997	=== Info    === 	Tile big map ends.
+07.56.14:997	=== Info    === 	Start saving defect result.
+07.56.19:904	=== Info    === 	Save defect result ends.
+07.56.19:919	=== Info    === 	Start saving AB recipe.
+07.56.20:107	=== Info    === 	Save AB recipe ends.
+07.56.20:326	=== Info    === 	GC finish

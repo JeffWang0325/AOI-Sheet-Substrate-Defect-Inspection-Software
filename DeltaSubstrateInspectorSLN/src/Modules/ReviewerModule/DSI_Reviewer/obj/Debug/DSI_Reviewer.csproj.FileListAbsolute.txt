@@ -1,0 +1,11 @@
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\bin\Debug\DSI_Reviewer.exe.config
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\bin\Debug\DSI_Reviewer.exe
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\bin\Debug\DSI_Reviewer.pdb
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\bin\Debug\halcondotnet.dll
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\bin\Debug\halcondotnet.xml
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\obj\Debug\DSI_Reviewer.csprojResolveAssemblyReference.cache
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\obj\Debug\DSI_Reviewer.Form_Main.resources
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\obj\Debug\DSI_Reviewer.Properties.Resources.resources
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\obj\Debug\DSI_Reviewer.csproj.GenerateResource.Cache
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\obj\Debug\DSI_Reviewer.exe
+C:\Users\test\Desktop\Test\DSI_Reviewer\DSI_Reviewer\obj\Debug\DSI_Reviewer.pdb

@@ -1,0 +1,44 @@
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.exe
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.pdb
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csprojResolveAssemblyReference.cache
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Form_24084R.resources
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Properties.Resources.resources
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csproj.GenerateResource.Cache
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.exe
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.pdb
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.pdb
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.pdb
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Form_24084R.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Properties.Resources.resources
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csproj.GenerateResource.Cache
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.dll
+G:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.dll
+F:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.pdb
+F:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.pdb
+F:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Form_24084R.resources
+F:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Properties.Resources.resources
+F:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csproj.GenerateResource.Cache
+F:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.dll
+F:\02_片檢機_AOI軟體_程式\01_正式出機版本\DSI_Proj_v181207-0\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.dll
+D:\Myproject\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.dll
+D:\Myproject\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.pdb
+D:\Myproject\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Form_24084R.resources
+D:\Myproject\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Properties.Resources.resources
+D:\Myproject\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csproj.GenerateResource.Cache
+D:\Myproject\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.dll
+D:\Myproject\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.pdb
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.dll
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.pdb
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csprojResolveAssemblyReference.cache
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Form_24084R.resources
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Properties.Resources.resources
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csproj.GenerateResource.Cache
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.dll
+E:\RD_WorkSpace\Chris\20190213\DSI_Project\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.pdb
+E:\Git (20191023 Jeff) - Branch\DSI_Proj\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.dll
+E:\Git (20191023 Jeff) - Branch\DSI_Proj\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\bin\x64\Debug\PM-24084R.pdb
+E:\Git (20191023 Jeff) - Branch\DSI_Proj\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Form_24084R.resources
+E:\Git (20191023 Jeff) - Branch\DSI_Proj\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM_24084R.Properties.Resources.resources
+E:\Git (20191023 Jeff) - Branch\DSI_Proj\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.csproj.GenerateResource.Cache
+E:\Git (20191023 Jeff) - Branch\DSI_Proj\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.dll
+E:\Git (20191023 Jeff) - Branch\DSI_Proj\DeltaSubstrateInspectorSLN\src\Modules\LightModule\24800R4\PM-24084R\obj\x64\Debug\PM-24084R.pdb

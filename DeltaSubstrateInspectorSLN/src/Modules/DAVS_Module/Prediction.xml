@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Prediction</name>
+    </assembly>
+    <members>
+        <member name="F:Prediction.Model.path">
+            <summary>
+            model path member
+            </summary>
+        </member>
+        <member name="F:Prediction.Model.graph">
+            <summary>
+            /CPU must be x64 or this object won't work
+            </summary>
+        </member>
+        <member name="M:Prediction.Model.Load_graph">
+            <summary>
+            load model
+            </summary>
+        </member>
+        <member name="M:Prediction.Model.Predict(System.Single[0:,0:])">
+            <summary>
+            predict 1D
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prediction.Model.Predict(System.Single[0:,0:,0:,0:])">
+            <summary>
+            predict 2D image
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Prediction.TensorflowSharp_Prediction">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.strInputLayerName">
+            <summary>
+            輸入層名稱
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.strOutputLayerName">
+            <summary>
+            輸出層名稱
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.modelNet">
+            <summary>
+            網路
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.sizeImage">
+            <summary>
+            設定影像尺寸
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.matSrcImage">
+            <summary>
+            來源影像
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.imageTempImage">
+            <summary>
+            暫存影像(供轉換影像用)
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.imageTempImageRgb">
+            <summary>
+            暫存影像(供轉換影像用)
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.fPredictionImage">
+            <summary>
+            PredictionImage
+            </summary>
+        </member>
+        <member name="P:Prediction.TensorflowSharp_Prediction.ClassNumber">
+            <summary>
+            類別數量
+            </summary>
+        </member>
+        <member name="P:Prediction.TensorflowSharp_Prediction.ClassName">
+            <summary>
+            類別名稱
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.stRunTime">
+            <summary>
+            執行時間
+            </summary>
+        </member>
+        <member name="F:Prediction.TensorflowSharp_Prediction.fResult">
+            <summary>
+            結果
+            [i, j]：第 i 張影像第 j 類的機率
+            i：第 i 張影像
+            j：第 j 類
+            </summary>
+        </member>
+        <member name="M:Prediction.TensorflowSharp_Prediction.LoadLayerName(System.String)">
+            <summary>
+            讀取 Input 及 Output 層的名稱
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prediction.TensorflowSharp_Prediction.LoadModel(System.String)">
+            <summary>
+            讀取 Model
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prediction.TensorflowSharp_Prediction.LoadParameter(System.String)">
+            <summary>
+            讀取參數
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prediction.TensorflowSharp_Prediction.SetImageSize(System.Int32,System.Int32)">
+            <summary>
+            設定影像 長、寬
+            </summary>
+            <param name="w"></param>
+            <param name="h"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prediction.TensorflowSharp_Prediction.Prediction(System.String[])">
+            <summary>
+            預測
+            </summary>
+            <param name="paths"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Prediction.TensorflowSharp_Prediction.PredictionRgb(System.String[])">
+            <summary>
+            預測Rgb
+            </summary>
+            <param name="paths"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

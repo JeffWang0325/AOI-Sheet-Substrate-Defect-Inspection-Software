@@ -1,0 +1,13 @@
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\bin\Debug\Advantech_IOCard.exe.config
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\obj\Debug\Advantech_IOCard.csprojResolveAssemblyReference.cache
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\obj\Debug\Advantech_IOCard.DIO_Board.resources
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\obj\Debug\Advantech_IOCard.Properties.Resources.resources
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\obj\Debug\Advantech_IOCard.csproj.GenerateResource.Cache
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\bin\Debug\Advantech_IOCard.exe
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\bin\Debug\Advantech_IOCard.pdb
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\bin\Debug\Automation.BDaq4.dll
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\obj\Debug\Advantech_IOCard.exe
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\Advantech_IOCard\obj\Debug\Advantech_IOCard.pdb
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\IOModule_NPN\Advantech_IOCard\bin\Debug\Advantech_IOCard.exe.config
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\IOModule_NPN\Advantech_IOCard\obj\Debug\Advantech_IOCard.exe
+C:\Users\JEROME.TENG\Desktop\Delta\全自動片狀AOI檢查與雷射標註機\IOModule_NPN\Advantech_IOCard\obj\Debug\Advantech_IOCard.pdb

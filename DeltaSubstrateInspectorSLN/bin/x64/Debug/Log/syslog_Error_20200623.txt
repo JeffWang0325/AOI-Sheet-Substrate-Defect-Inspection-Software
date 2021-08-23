@@ -1,0 +1,4 @@
+10.20.20:052	=== Error   === 	EXMsg: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: indexPosInsState: 1,MoveIndex: 2
+10.56.37:656	=== Error   === 	EXMsg: 索引超出範圍。必須為非負數且小於集合的大小。
+參數名稱: indexPosInsState: 1,MoveIndex: 2

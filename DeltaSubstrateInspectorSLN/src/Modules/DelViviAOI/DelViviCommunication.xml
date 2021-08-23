@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DelViviCommunication</name>
+    </assembly>
+    <members>
+        <member name="F:DelVivi.Communication.RRMode.ViTcpMessage.mProtocolVeision">
+            <summary>
+            預設的Protocol Version . 用於確認通訊雙方的版本是否相同
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpMessage.IsPairType(DelVivi.Communication.RRMode.ViTcpMessage)">
+            <summary>
+            傳入的Message與目前Message是否互為 [問][答]
+            </summary>
+            <param name="aMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpMessage.IsPairOf(DelVivi.Communication.RRMode.ViTcpMessage)">
+            <summary>
+            對應參考的資料 型態對應[問vs答] 且  TickID 相同
+            </summary>
+            <param name="aMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpMessage.TickId">
+            <summary>
+            每一個呼叫Request需邀一個ID,對應Response的資料內容需有相同的ID
+            </summary>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpMessage.Version">
+            <summary>
+            Protocol Version . 用於確認通訊雙方的DLL版本是否相同
+            </summary>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpMessage.mPairType">
+            <summary>
+            紀錄對應物件型態, [問]vs[答]互為對應 , 每一種物件都有對應的另一種物件
+            </summary>
+        </member>
+        <member name="T:DelVivi.Communication.RRMode.ResponseKindType">
+            <summary>
+            回應的原因
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpResponse.#ctor(DelVivi.Communication.RRMode.ViTcpRequest)">
+            <summary>
+            配對關連,必須帶入source (Request型態的物件)
+            </summary>
+            <param name="source"></param>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpResponse.#ctor(System.Int32)">
+            <summary>
+            特殊產生的回應,理論上不存在,必須有問才有答
+            </summary>
+            <param name="NewTickID"></param>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpResponse.ResponseKind">
+            <summary>
+            回應的原因 正常或是Timeout ...
+            </summary>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpResponse.OrigonMessage">
+            <summary>
+            本次回答 原本詢問的Message , 可以透過PairType取得正確的原本詢問型態,進行轉型
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpRequest.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="NewTickID">內部自動產生累加的TickID</param>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpChangeRequest.Command">
+            <summary>
+            存入命令
+            </summary>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpChangeRequest.Parameters">
+            <summary>
+            存入參數
+            </summary>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpChangeResponse.Reponses">
+            <summary>
+            命令執行結果
+            </summary>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpDataRequest.Items">
+            <summary>
+            要索取的資料名稱(可多筆)
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpMeasureRequest.#ctor(System.Enum)">
+            <summary>
+            要求對方量測
+            </summary>
+            <param name="command">帶入要量測項目</param>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpMeasureRequest.Paramters">
+            <summary>
+            記錄要量測的項目
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcp.Begin(System.Int32)">
+            <summary>
+            begin as server   傳回值  0:未成功   1:Server   2:Client
+            </summary>
+            <param name="iPort"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcp.Begin(System.String,System.Int32)">
+            <summary>
+            begin as Client   傳回值  0:未成功   1:Server   2:Client
+            </summary>
+            <param name="Address"></param>
+            <param name="iPort"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcp.WriteTo(DelVivi.Communication.DataMode.ViTcpData)">
+            <summary>
+            立即送出資料      傳回值:送出資料大小  失敗:回傳0 ,( 建議使用Write 取代, 注意:呼叫後資料不進入TxBuffer)
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcp.Write(DelVivi.Communication.DataMode.ViTcpData,System.Int32)">
+            <summary>
+            寫入TxBuffer後立即返回  資料由內部機制自動傳送
+            若內部資料大於MaxBufferSize,將刪除最前端舊資料
+            </summary>
+            <param name="data"></param>
+            <param name="MaxBufferSize"></param>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcp.available">
+            <summary>
+            傳回目前RxBuffer資料量, 若無傳回0 , 使用於判定是否呼叫Read()
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcp.Read">
+            <summary>
+            由RxBuffer讀回第一筆 , 若無資料則傳回null ,建議搭配available()判斷呼叫
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcp.View">
+            <summary>
+            看RxBuffer第一筆,但不清除 , 若無資料則傳回null ,建議搭配available()判斷呼叫
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DelVivi.Communication.DataMode.ViTcpManager">
+            <summary>
+            配合Event 與命令功能
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcpManager.Start">
+            <summary>
+            開始訊息分析機制,起始Hander (Event回呼功能)
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.DataMode.ViTcpManager.Stop">
+            <summary>
+            停止訊息分析機制,取消Hander (Event回呼功能)
+            </summary>     
+        </member>
+        <member name="T:DelVivi.Communication.DataMode.EnDataType">
+            <summary>
+            RequestData :要求對方送資料                ResponseData:送出資料給對方
+            RequestCmd :要求對方動作(配合data內容)     ResponseCmd: 回應對方動作結果
+            </summary>
+        </member>
+        <member name="T:DelVivi.Communication.DataMode.ViTcpData">
+            <summary>
+            DataSN :每個資料都有獨立的序號，方便確認是否遺漏
+            </summary>
+            <example>
+            public class ExchangeContainer : ViTcpData
+            {
+                public HImage hImage = new HImage();
+                public int DefectCount;
+                public int[] Parameter = new int[1024];
+                public ExchangeContainer(): base()
+                {
+                    hImage.GenEmptyObj();
+                }
+            }
+            </example>
+        </member>
+        <member name="P:DelVivi.Communication.DataMode.ViTcpData.TcpDataType">
+            <summary>ns
+            封包的用途,用於分隔不同功能Event
+            </summary>
+        </member>
+        <member name="P:DelVivi.Communication.DataMode.ViTcpData.TicketSN">
+            <summary>
+            封包的識別碼,送出帶ID, 每一個封包對方對應回信,具有相同TickID
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.DeltaSorter.DeltaServer.Stop">
+            <summary>
+            stop TCPListner and Exit Thread 
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.DeltaSorter.DeltaServer.SendResult(System.String)">
+            <summary>
+            1. Store the result in inner buffer , 
+            2. when recive S14F1 , combine head string(S14F2 xxxx ) and result string 
+               send back this result string to client
+            </summary>
+            <param name="strResult"></param>
+        </member>
+        <member name="M:DelVivi.Communication.DeltaSorter.DeltaServer.Start(System.String,System.Int32)">
+            <summary>
+            open a task to loop receive TCPIP Message
+            max buffer size = 1024
+            </summary>
+            <param name="Port"></param>
+        </member>
+        <member name="P:DelVivi.Communication.DeltaSorter.DeltaServer.ResultClass">
+            <summary>
+            return S15F2 result ... can be convert to class data
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpDataBuffer.Push(DelVivi.Communication.RRMode.ViTcpMessage,System.Boolean)">
+            <summary>
+            放入一筆到尾端
+            </summary>
+            <param name="message"></param>
+            <param name="bRemoveBySize">是否立即檢查DataList.Count > MaxSize,並移除較舊資料</param>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpDataBuffer.PullTop">
+            <summary>
+            取出第一筆,並刪除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpDataBuffer.Pull(System.Int32)">
+            <summary>
+            依據ID取出並刪除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpDataBuffer.Delete(System.Int32)">
+            <summary>
+            依據ID刪除
+            </summary>
+            <param name="ID"></param>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpDataBuffer.ViewTop">
+            <summary>
+            取出第一筆,保留不刪除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.IViTcpFramework.Begin(System.Int32)">
+            <summary>
+            begin as server   傳回值  0:未成功   1:Server   2:Client
+            </summary>
+            <param name="iPort"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.IViTcpFramework.Begin(System.String,System.Int32)">
+            <summary>
+            begin as Client   傳回值  0:未成功   1:Server   2:Client
+            </summary>
+            <param name="Address"></param>
+            <param name="iPort"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.IViTcpFramework.Write(DelVivi.Communication.RRMode.ViTcpMessage,System.Int32)">
+            <summary>
+            寫入TxBuffer後立即返回  資料會 1.新產生的Task檢查TxBufers送出, 2.若無法送出由內定Thread持續傳送
+            若內部資料大於MaxBufferSize,將刪除最前端舊資料
+            </summary>
+            <param name="data"></param>
+            <param name="MaxBufferSize"></param>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.IViTcpFramework.IsSocketLiving">
+            <summary>
+            測試Socket是否還活著
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpMessageFormatter.FindSizeInHeader(System.Byte[],System.Int32@,System.Int32@)">
+            <summary>
+             輸入array,傳回字串中包含Size的資訊
+            </summary>
+            <param name="byteHeader">輸入字串</param>
+            <param name="iPos1">Size字串開始點</param>
+            <param name="iPos2">Size字串結束點</param>
+            <returns></returns>       
+        </member>
+        <member name="T:DelVivi.Communication.RRMode.ViTcp">
+            <summary>
+            Multi Thread Safe
+            </summary>
+        </member>
+        <member name="T:DelVivi.Communication.RRMode.ViTcpEventManager">
+            <summary>
+            配合Event 與命令功能,回持續去看RxBuffer中的資料,並對應呼叫Event
+            注意: Start()後 看過即刪除 ,若無掛入Event Handler 資料會不斷被清除
+            若不使用Event功能,請不啟動Start() or 改用ViTcp類別
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpEventManager.EventStart">
+            <summary>
+            開始訊息分析機制,起始Hander (Event回呼功能)
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpEventManager.EventStop">
+            <summary>
+            停止訊息分析機制,取消Hander (Event回呼功能)
+            </summary>     
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpEventManager.Write(DelVivi.Communication.RRMode.ViTcpMessage,System.Int32)">
+            <summary>
+            寫入TxBuffer後立即返回  資料會 1.新產生的Task檢查TxBufers送出, 2.若無法送出由內定Thread持續傳送
+            若內部資料大於MaxBufferSize,將刪除最前端舊資料
+            </summary>
+            <param name="data"></param>
+            <param name="MaxBufferSize"></param>
+        </member>
+        <member name="M:DelVivi.Communication.RRMode.ViTcpEventManager.Write(DelVivi.Communication.RRMode.ViTcpMessage@,System.Int32)">
+            <summary>
+            寫入TxBuffer後立即返回  資料會 1.新產生的Task檢查TxBufers送出, 2.若無法送出由內定Thread持續傳送
+            若內部資料大於MaxBufferSize,將刪除最前端舊資料
+            </summary>
+            <param name="data"></param>
+            <param name="MaxBufferSize"></param>
+        </member>
+        <member name="P:DelVivi.Communication.RRMode.ViTcpEventManager.ResponseTimeout">
+            <summary>
+            送出命令後,收到Response的時間,可用於確認是否斷線
+            default = 2000ms
+            </summary>
+        </member>
+        <member name="T:DelVivi.Communication.Consts">
+            <summary>
+            Communication Const string
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.#ctor(System.Net.Sockets.Socket)">
+            <summary>
+            Constructs a TCPMessageProcessor that is capable
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.#ctor(System.Net.EndPoint)">
+            <summary>
+            Constructs a TCPMessageProcessor that connects to a given EndPoint, and is capable
+            </summary>
+            <param name="endPoint">EndPoint to connect to.</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.Connect(System.Boolean)">
+            <summary>
+            Connects to the EndPoint set in the constructor, 
+            creates a NetworkStream to it, StreamWriter and StreamReader, and starts
+            asynchronous reading.
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.Start">
+            <summary>
+            Starts the senderThread. 
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.Stop">
+            <summary>
+            Stops the TCPMessageProcessor, and disconnects from the network socket.
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.SendMessage(System.String)">
+            <summary>
+            Sends a message asynchronously in the sender thread.
+            </summary>
+            <param name="message">string to send.</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.ThreadSendMessage">
+            <summary>
+            Sender thread method, that send messages from a queue. 
+            If not active, it tries to connect.
+            </summary>
+            <param name="message">Message to send.</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.DataRead(System.IAsyncResult)">
+            <summary>
+            Asynchronous callback method for receiving the bytes read.
+            </summary>
+            <param name="ar">IAsyncResult callback parameter</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringClient.MessageReceived(System.Object)">
+            <summary>
+            </summary>
+            <param name="messageStream">StreamReader that reads the memory stream containing the message.</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringServer.#ctor">
+            <summary>
+            Constructor for default values: max 1 client, any TCP/IP address, port 8888
+            </summary>
+            <param name="t">Types to deserialize</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringServer.#ctor(System.Int32,System.Int32,System.Net.IPAddress)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="maxCli">Max number of clients</param>
+            <param name="prt">Server port number</param>
+            <param name="addr">Address of the server socket</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringServer.Start">
+            <summary>
+            Starts the server, on previously address and port
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.StringServer.Stop">
+            <summary>
+            Stops the server
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.StringServer.AcceptSocket(System.IAsyncResult)">
+            <summary>
+            Callback method for accepting socket connections.
+            </summary>
+            <param name="ar">Async object from BeginAccept</param>
+        </member>
+        <member name="M:DelVivi.Communication.StringServer.ClientClosed">
+            <summary>
+            Callback method for counting the number of connected clients.
+            </summary>
+        </member>
+        <member name="F:DelVivi.Communication.DeltaSorter.UiMesClient.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.DeltaSorter.UiMesClient.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.Communication.DeltaSorter.UiMesClient.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.Communication.DeltaSorter.UiMesServer.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.DeltaSorter.UiMesServer.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.Communication.DeltaSorter.UiMesServer.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.Communication.UiStringClient.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.UiStringClient.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.Communication.UiStringClient.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.Communication.UiStringServer.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.UiStringServer.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.Communication.UiStringServer.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="T:DelVivi.Communication.ByteUtils">
+            <summary>
+            於byte [] array尋找的一些工具
+            </summary>
+        </member>
+        <member name="M:DelVivi.Communication.ByteUtils.IndexOf(System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            於Array中找出pattern啟始位置
+            </summary>
+            <param name="array"></param>
+            <param name="pattern"></param>
+            <param name="offset"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DelVivi.Communication.ByteUtils.GetString(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="array"></param>
+            <param name="offset"></param>
+            <param name="Length"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

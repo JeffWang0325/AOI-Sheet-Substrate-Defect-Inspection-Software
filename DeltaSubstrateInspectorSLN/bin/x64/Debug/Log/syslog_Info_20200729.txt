@@ -1,0 +1,49 @@
+08.41.02:327	=== Info    === 	GC finish
+08.41.48:408	=== Info    === 	Start tile big map.
+08.41.48:415	=== Info    === 	Tile big map ends.
+08.41.48:564	=== Info    === 	GC finish
+11.05.38:087	=== Info    === 	Start tile big map.
+11.05.38:094	=== Info    === 	Tile big map ends.
+11.05.38:147	=== Info    === 	GC finish
+11.06.10:696	=== Info    === 	Start tile big map.
+11.06.10:698	=== Info    === 	Tile big map ends.
+11.06.10:788	=== Info    === 	GC finish
+11.06.52:733	=== Info    === 	Start marks positioning
+11.06.53:173	=== Info    === 	Marks positioning ends
+11.07.02:560	=== Info    === 	Start tile big map.
+11.07.02:657	=== Info    === 	Tile big map ends.
+11.07.02:657	=== Info    === 	Start saving defect result.
+11.07.06:340	=== Info    === 	Save defect result ends.
+11.07.06:353	=== Info    === 	GC finish
+11.16.25:244	=== Info    === 	---------- Process images of first position ----------
+11.16.28:539	=== Info    === 	Start marks positioning
+11.16.28:882	=== Info    === 	Marks positioning ends
+11.16.38:205	=== Info    === 	Start tile big map.
+11.16.38:310	=== Info    === 	Tile big map ends.
+11.16.38:310	=== Info    === 	Start saving defect result.
+11.16.43:713	=== Info    === 	Save defect result ends.
+11.16.43:734	=== Info    === 	GC finish
+11.16.54:379	=== Info    === 	---------- Process images of first position ----------
+11.16.54:436	=== Info    === 	Start marks positioning
+11.16.54:731	=== Info    === 	Marks positioning ends
+11.17.04:051	=== Info    === 	Start tile big map.
+11.17.04:154	=== Info    === 	Tile big map ends.
+11.17.04:154	=== Info    === 	Start saving defect result.
+11.17.13:309	=== Info    === 	Save defect result ends.
+11.17.13:477	=== Info    === 	GC finish
+11.17.20:218	=== Info    === 	---------- Process images of first position ----------
+11.17.20:280	=== Info    === 	Start marks positioning
+11.17.20:749	=== Info    === 	Marks positioning ends
+11.17.30:130	=== Info    === 	Start tile big map.
+11.17.30:224	=== Info    === 	Tile big map ends.
+11.17.30:224	=== Info    === 	Start saving defect result.
+11.17.41:413	=== Info    === 	Save defect result ends.
+11.17.41:597	=== Info    === 	GC finish
+11.20.03:853	=== Info    === 	---------- Process images of first position ----------
+11.20.04:816	=== Info    === 	Start tile big map.
+11.20.04:825	=== Info    === 	Tile big map ends.
+11.20.04:847	=== Info    === 	GC finish
+11.20.19:797	=== Info    === 	---------- Process images of first position ----------
+11.20.20:622	=== Info    === 	Start tile big map.
+11.20.20:624	=== Info    === 	Tile big map ends.
+11.20.20:705	=== Info    === 	GC finish

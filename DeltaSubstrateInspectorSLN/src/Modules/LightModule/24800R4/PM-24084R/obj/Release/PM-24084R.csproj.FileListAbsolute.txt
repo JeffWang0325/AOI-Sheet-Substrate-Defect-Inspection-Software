@@ -1,0 +1,17 @@
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\bin\Release\PM-24084R.exe
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\bin\Release\PM-24084R.pdb
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\obj\Release\PM-24084R.csprojResolveAssemblyReference.cache
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\obj\Release\PM_24084R.Form_24084R.resources
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\obj\Release\PM_24084R.Properties.Resources.resources
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\obj\Release\PM-24084R.csproj.GenerateResource.Cache
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\obj\Release\PM-24084R.exe
+D:\RT\CS\MVGOsys\PM-24084R\PM-24084R\obj\Release\PM-24084R.pdb
+D:\工作資料\輝動視覺\產品資料\調光器\範例程式\PM-24084R\PM-24084R\PM-24084R\obj\Release\PM-24084R.exe
+D:\工作資料\輝動視覺\產品資料\調光器\範例程式\PM-24084R\PM-24084R\PM-24084R\obj\Release\PM-24084R.pdb
+D:\工作資料\輝動視覺\產品資料\調光器\範例程式\PM-24084R\PM-24084R\PM-24084R\bin\Release\PM-24084R.exe
+D:\工作資料\輝動視覺\產品資料\調光器\範例程式\PM-24084R\PM-24084R\PM-24084R\bin\Release\PM-24084R.pdb
+D:\工作資料\輝動視覺\產品資料\調光器\範例程式\PM-24084R\PM-24084R\PM-24084R\obj\Release\PM_24084R.Form_24084R.resources
+D:\工作資料\輝動視覺\產品資料\調光器\範例程式\PM-24084R\PM-24084R\PM-24084R\obj\Release\PM_24084R.Properties.Resources.resources
+D:\工作資料\輝動視覺\產品資料\調光器\範例程式\PM-24084R\PM-24084R\PM-24084R\obj\Release\PM-24084R.csproj.GenerateResource.Cache
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\Release\PM-24084R.exe
+C:\Users\test\Desktop\24800R4\24800R4\PM-24084R\obj\Release\PM-24084R.pdb

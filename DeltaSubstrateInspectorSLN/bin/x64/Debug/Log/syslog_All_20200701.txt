@@ -1,0 +1,29 @@
+17.14.19:718	=== Info    === 	Start tile big map.
+17.14.20:069	=== Info    === 	Tile big map ends.
+17.14.20:069	=== Info    === 	Start saving defect result.
+17.14.28:887	=== Info    === 	Save defect result ends.
+17.14.44:053	=== Info    === 	GC finish
+17.17.30:161	=== Info    === 	Start tile big map.
+17.17.30:657	=== Info    === 	Tile big map ends.
+17.17.30:657	=== Info    === 	Start saving defect result.
+17.17.34:769	=== Info    === 	Save defect result ends.
+17.17.34:867	=== Info    === 	Start saving AB recipe.
+17.17.35:322	=== Info    === 	Save AB recipe ends.
+17.17.38:014	=== Info    === 	GC finish
+17.22.19:799	=== Info    === 	Start tile big map.
+17.22.20:430	=== Info    === 	Tile big map ends.
+17.22.20:430	=== Info    === 	Start saving defect result.
+17.22.33:781	=== Info    === 	Save defect result ends.
+17.22.43:033	=== Info    === 	GC finish
+17.27.03:156	=== Info    === 	Start tile big map.
+17.27.03:722	=== Info    === 	Tile big map ends.
+17.27.03:723	=== Info    === 	Start saving defect result.
+17.27.13:846	=== Info    === 	Save defect result ends.
+17.27.13:846	=== Info    === 	Start saving AB recipe.
+17.27.14:037	=== Info    === 	Save AB recipe ends.
+17.27.15:402	=== Info    === 	GC finish
+17.31.18:731	=== Info    === 	Start tile big map.
+17.31.19:550	=== Info    === 	Tile big map ends.
+17.31.19:550	=== Info    === 	Start saving defect result.
+17.31.21:140	=== Info    === 	Save defect result ends.
+17.31.22:087	=== Info    === 	GC finish

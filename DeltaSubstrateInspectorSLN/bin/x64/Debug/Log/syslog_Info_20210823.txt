@@ -1,0 +1,40 @@
+09.21.54:049	=== Info    === 	---------- Process images of first position ----------
+09.21.54:133	=== Info    === 	Start marks positioning
+09.21.54:719	=== Info    === 	Marks positioning ends
+09.22.06:055	=== Info    === 	Start tile big map.
+09.22.06:155	=== Info    === 	Tile big map ends.
+09.22.06:155	=== Info    === 	Start saving defect result.
+09.22.11:741	=== Info    === 	Save defect result ends.
+09.22.11:741	=== Info    === 	GC finish
+11.41.29:920	=== Info    === 	---------- Process images of first position ----------
+11.41.29:981	=== Info    === 	Start marks positioning
+11.41.30:663	=== Info    === 	Marks positioning ends
+11.41.41:666	=== Info    === 	Start tile big map.
+11.41.41:764	=== Info    === 	Tile big map ends.
+11.41.41:764	=== Info    === 	Start saving defect result.
+11.41.50:922	=== Info    === 	Save defect result ends.
+11.41.50:933	=== Info    === 	GC finish
+11.45.08:921	=== Info    === 	---------- Process images of first position ----------
+11.45.08:982	=== Info    === 	Start marks positioning
+11.45.09:624	=== Info    === 	Marks positioning ends
+11.45.21:232	=== Info    === 	Start tile big map.
+11.45.21:339	=== Info    === 	Tile big map ends.
+11.45.21:339	=== Info    === 	Start saving defect result.
+11.45.34:431	=== Info    === 	Save defect result ends.
+11.45.34:443	=== Info    === 	GC finish
+11.54.36:217	=== Info    === 	---------- Process images of first position ----------
+11.54.36:278	=== Info    === 	Start marks positioning
+11.54.37:316	=== Info    === 	Marks positioning ends
+11.54.49:484	=== Info    === 	Start tile big map.
+11.54.49:608	=== Info    === 	Tile big map ends.
+11.54.49:608	=== Info    === 	Start saving defect result.
+11.55.00:247	=== Info    === 	Save defect result ends.
+11.55.00:264	=== Info    === 	GC finish
+12.09.29:357	=== Info    === 	---------- Process images of first position ----------
+12.09.29:420	=== Info    === 	Start marks positioning
+12.09.30:208	=== Info    === 	Marks positioning ends
+12.09.42:427	=== Info    === 	Start tile big map.
+12.09.42:540	=== Info    === 	Tile big map ends.
+12.09.42:540	=== Info    === 	Start saving defect result.
+12.09.56:689	=== Info    === 	Save defect result ends.
+12.09.56:705	=== Info    === 	GC finish

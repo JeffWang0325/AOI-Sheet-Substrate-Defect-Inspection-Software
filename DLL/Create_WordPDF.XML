@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Create_WordPDF</name>
+    </assembly>
+    <members>
+        <member name="M:Create_WordPDF.clsStaticTool.DeepClone``1(``0)">
+            <summary>
+            物件複製 (深層)
+            Note: 資料流太長會失敗!
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Create_WordPDF.enu_OutputFormat">
+            <summary>
+            輸出檔案格式
+            </summary>
+        </member>
+        <member name="T:Create_WordPDF.Cls_WordPDF">
+            <summary>
+            新增/編輯/轉檔 Word及PDF
+            </summary>
+        </member>
+        <member name="P:Create_WordPDF.Cls_WordPDF.wordApp">
+            <summary>
+            Word應用程式變數
+            </summary>
+        </member>
+        <member name="P:Create_WordPDF.Cls_WordPDF.wordDoc">
+            <summary>
+            Word文件變數
+            </summary>
+        </member>
+        <member name="F:Create_WordPDF.Cls_WordPDF.oMissing">
+            <summary>
+            由於使用的是COM庫，因此有許多變數需要用Missing.Value代替
+            </summary>
+        </member>
+        <member name="M:Create_WordPDF.Cls_WordPDF.Initial">
+            <summary>
+            【前置處理】
+            </summary>
+        </member>
+        <member name="M:Create_WordPDF.Cls_WordPDF.Convert_2_WordPDF(System.String,System.String,Create_WordPDF.enu_OutputFormat)">
+            <summary>
+            Word轉到PDF 或 PDF轉到Word
+            </summary>
+            <param name="loadPath">載入檔案路徑</param>
+            <param name="savePath">儲存檔案路徑</param>
+            <param name="outputFormat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Create_WordPDF.Cls_WordPDF.Create_WordPDF_withImg(System.String,Create_WordPDF.enu_OutputFormat,System.String,System.Single,System.Int32,System.Int32,System.Collections.Generic.List{System.Collections.Generic.List{System.Single}},System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Collections.Generic.List{System.Collections.Generic.List{System.Single}},System.Drawing.Bitmap,System.Single,System.Single)">
+            <summary>
+            創建 Word/PDF 檔
+            Note: 由於使用到 Clipboard ，因此必須於 [STAThread] 下方能正常執行!
+            </summary>
+            <param name="savePath"></param>
+            <param name="outputFormat"></param>
+            <param name="title"></param>
+            <param name="FontSize_title"></param>
+            <param name="numRows"></param>
+            <param name="numColumns"></param>
+            <param name="FontSize_tb"></param>
+            <param name="Text_tb"></param>
+            <param name="Width_cm_tb"></param>
+            <param name="Image"></param>
+            <param name="Width_cm_Img"></param>
+            <param name="Height_cm_Img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Create_WordPDF.Cls_WordPDF.CreateAdd_WordPDF_withImg(System.String,Create_WordPDF.enu_OutputFormat,System.String,System.Single,System.Int32,System.Int32,System.Collections.Generic.List{System.Collections.Generic.List{System.Single}},System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Collections.Generic.List{System.Collections.Generic.List{System.Single}},System.Drawing.Bitmap,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            創建 Word/PDF 檔 (連續寫入多筆資料，最後一次輸出為一個檔案)
+            Note: 由於使用到 Clipboard ，因此必須於 [STAThread] 下方能正常執行!
+            </summary>
+            <param name="savePath"></param>
+            <param name="outputFormat"></param>
+            <param name="title"></param>
+            <param name="FontSize_title"></param>
+            <param name="numRows"></param>
+            <param name="numColumns"></param>
+            <param name="FontSize_tb"></param>
+            <param name="Text_tb"></param>
+            <param name="Width_cm_tb"></param>
+            <param name="Image"></param>
+            <param name="Width_cm_Img"></param>
+            <param name="Height_cm_Img"></param>
+            <param name="b_Initial">是否為第一筆資料</param>
+            <param name="b_newPage">是否新增一頁寫入下一筆資料</param>
+            <param name="b_End">是否為最後一筆資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:Create_WordPDF.Cls_WordPDF.Add_WordPDF(System.String,System.String,Create_WordPDF.enu_OutputFormat)">
+            <summary>
+            開啟一個既有的 word/pdf 檔案，於最下方新增文字，並另存
+            </summary>
+            <param name="loadPath"></param>
+            <param name="savePath"></param>
+            <param name="outputFormat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Create_WordPDF.Cls_WordPDF.MergePDF(System.String[],System.String,Create_WordPDF.enu_OutputFormat)">
+            <summary>
+            合併多個PDF檔
+            Note: 工具>>NuGet>>安裝FreeSpire.PDF
+            </summary>
+            <param name="files"></param>
+            <param name="savePath"></param>
+            <param name="outputFormat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Create_WordPDF.Cls_File_ByteArray.File_to_ByteArray(System.String)">
+            <summary>
+            Convert File to Byte Array
+            </summary>
+            <param name="fileName">檔案路徑(含副檔名)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Create_WordPDF.Cls_File_ByteArray.ByteArray_to_File(System.String,System.Byte[])">
+            <summary>
+            Convert Byte Array to File
+            </summary>
+            <param name="fileName">檔案路徑(含副檔名)</param>
+            <param name="fileContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Create_WordPDF.Cls_ExcelPDF.Excel_to_PDF(System.String,System.String)">
+            <summary>
+            Excel (.xlsx or .xls) 轉到PDF
+            </summary>
+            <param name="loadPath">Excel 檔案位置</param>
+            <param name="savePath">PDF 儲存位置</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,16 @@
+21.16.20:693	=== Info    === 	---------- Process images of first position ----------
+21.16.20:830	=== Info    === 	Start marks positioning
+21.16.22:071	=== Info    === 	Marks positioning ends
+21.16.38:042	=== Info    === 	Start tile big map.
+21.16.38:155	=== Info    === 	Tile big map ends.
+21.16.38:155	=== Info    === 	Start saving defect result.
+21.16.45:936	=== Info    === 	Save defect result ends.
+21.16.45:972	=== Info    === 	GC finish
+21.16.55:126	=== Info    === 	---------- Process images of first position ----------
+21.16.55:204	=== Info    === 	Start marks positioning
+21.16.57:064	=== Info    === 	Marks positioning ends
+21.17.10:933	=== Info    === 	Start tile big map.
+21.17.11:041	=== Info    === 	Tile big map ends.
+21.17.11:041	=== Info    === 	Start saving defect result.
+21.17.26:486	=== Info    === 	Save defect result ends.
+21.17.26:503	=== Info    === 	GC finish

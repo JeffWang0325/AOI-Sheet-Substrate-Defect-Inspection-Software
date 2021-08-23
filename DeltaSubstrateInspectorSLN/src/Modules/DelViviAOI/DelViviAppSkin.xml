@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DelViviAppSkin</name>
+    </assembly>
+    <members>
+        <member name="F:DelVivi.AppSkin.ArrayDataView._rows">
+            <summary>
+            array rows.
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ArrayDataView._data">
+            <summary>
+            Data which will be binded.
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ArrayDataView._colnames">
+            <summary>
+            Alternative column names.
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ArrayDataView.#ctor(System.Array)">
+            <summary>
+            Initializes a new ArrayDataView from array.
+            </summary>
+            <param name="array">array of data.</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ArrayDataView.#ctor(System.Array,System.Object[])">
+            <summary>
+            Initializes a new ArrayDataView from array with custom column names.
+            </summary>
+            <param name="array">array of data.</param>
+            <param name="colnames">collection of column names.</param>
+        </member>
+        <member name="T:DelVivi.AppSkin.ArrayRowView">
+            <summary>
+            Represents a row from array view.
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ArrayRowView._owner">
+            <summary>
+            Owner of the row.
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.PanelParameterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.PanelParameterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.PanelParameterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.PanelStringForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.PanelStringForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.PanelStringForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DelVivi.AppSkin.Properties.Resources">
+            <summary>
+              用於查詢當地語系化字串等的強類型資源類別。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.ResourceManager">
+            <summary>
+              傳回這個類別使用的快取的 ResourceManager 執行個體。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Culture">
+            <summary>
+              覆寫目前執行緒的 CurrentUICulture 屬性，對象是所有
+              使用這個強類型資源類別的資源查閱。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.back">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Back3">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Backspace1">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Backspace11">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Cancel21">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Cancel3">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Clear1">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Clear11">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.down">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Enter21">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Enter3">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.forward">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Home3">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Redo21">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.Return3">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.Properties.Resources.up">
+            <summary>
+              查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.ViPropertyGrid.Source">
+            <summary>
+            連結的IParameter
+            </summary>
+        </member>
+        <member name="T:DelVivi.AppSkin.ViTreeNode">
+            <summary>
+            使用此Class去連結IParameter 與 TreeNode
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.ViTreeNode.Value">
+            <summary>
+            連結的IParameter
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViEnumPanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViEnumPanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViEnumPanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViArrayPanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViArrayPanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViArrayPanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViBaseTypePanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViBaseTypePanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViBaseTypePanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViGroupPanelTreeNode.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanelTreeNode.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanelTreeNode.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViTextEditForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViTextEditForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViTextEditForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViTextPanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViTextPanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViTextPanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViGroupPanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViGroupPanelVerticalStyle.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanelVerticalStyle.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanelVerticalStyle.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanelTabStyle.RefreshValue">
+            <summary>
+            更新數值資料
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViGroupPanelTabStyle.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanelTabStyle.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViGroupPanelTabStyle.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.ViNumericUpDown.CorrectValue">
+            <summary>
+            Write / 會經過上下限限定
+            Read  / 直接傳回內部值
+            </summary>
+        </member>
+        <member name="P:DelVivi.AppSkin.ViNumericUpDown.RelativeValue">
+            <summary>
+            內插百分比
+            ((base.Value - base.Minimum) / (base.Maximum - base.Minimum)
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViBoolPanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViBoolPanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViBoolPanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViPanel.AutoVerticalLayout">
+            <summary>
+            自動垂直排列
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViPanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViPanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+        <member name="F:DelVivi.AppSkin.ViValuePanel.components">
+            <summary> 
+            設計工具所需的變數。
+            </summary>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViValuePanel.Dispose(System.Boolean)">
+            <summary> 
+            清除任何使用中的資源。
+            </summary>
+            <param name="disposing">如果應該處置 Managed 資源則為 true，否則為 false。</param>
+        </member>
+        <member name="M:DelVivi.AppSkin.ViValuePanel.InitializeComponent">
+            <summary> 
+            此為設計工具支援所需的方法 - 請勿使用程式碼編輯器
+            修改這個方法的內容。
+            </summary>
+        </member>
+    </members>
+</doc>

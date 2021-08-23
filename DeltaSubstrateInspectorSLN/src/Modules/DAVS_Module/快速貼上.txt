@@ -1,0 +1,7 @@
+xcopy "$(ProjectDir)src\Modules\DAVS_Module\concrt140.dll" "$(ProjectDir)$(OutDir)" /Y
+xcopy "$(ProjectDir)src\Modules\DAVS_Module\cvextern.dll" "$(ProjectDir)$(OutDir)" /Y
+xcopy "$(ProjectDir)src\Modules\DAVS_Module\libtensorflow.dll" "$(ProjectDir)$(OutDir)" /Y
+xcopy "$(ProjectDir)src\Modules\DAVS_Module\msvcp140.dll" "$(ProjectDir)$(OutDir)" /Y
+xcopy "$(ProjectDir)src\Modules\DAVS_Module\opencv_ffmpeg341_64.dll" "$(ProjectDir)$(OutDir)" /Y
+xcopy "$(ProjectDir)src\Modules\DAVS_Module\vcruntime140.dll" "$(ProjectDir)$(OutDir)" /Y
+xcopy "$(ProjectDir)src\Modules\DAVS_Module\image_converter.dll" "$(ProjectDir)$(OutDir)" /Y

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.1" halcon_version="13.0">
+<procedure name="main">
+<interface/>
+<body>
+<l>list_files('F:/新增資料夾/1 (Score1 = 0.53, Score2 = 0.58)', 'files', Files)</l>
+<l>gen_empty_obj(ImageList)</l>
+<l>for Index := 1 to |Files| by 1</l>
+<c>   </c>
+<l>    nowID:=Index-1</l>
+<l>    if(nowID==0 or nowID==2) </l>
+<l>        continue</l>
+<l>    endif</l>
+<c>    </c>
+<l>    nowFile := Files[Index-1]    </l>
+<l>    read_image(Image, nowFile)</l>
+<l>    concat_obj(ImageList, Image, ImageList)</l>
+<c>    </c>
+<l>endfor</l>
+<c></c>
+<c></c>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>

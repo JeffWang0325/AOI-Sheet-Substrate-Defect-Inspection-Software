@@ -1,0 +1,56 @@
+10.01.45:431	=== Info    === 	Start tile big map.
+10.01.45:832	=== Info    === 	Tile big map ends.
+10.01.45:832	=== Info    === 	Start saving defect result.
+10.01.53:177	=== Info    === 	Save defect result ends.
+10.46.08:582	=== Info    === 	Start tile big map.
+10.46.08:933	=== Info    === 	Tile big map ends.
+10.46.08:933	=== Info    === 	Start saving defect result.
+10.46.14:003	=== Info    === 	Save defect result ends.
+10.46.14:003	=== Info    === 	Start saving AB recipe.
+10.46.14:633	=== Info    === 	Save AB recipe ends.
+10.53.38:879	=== Info    === 	Start tile big map.
+10.53.39:547	=== Info    === 	Tile big map ends.
+10.53.39:547	=== Info    === 	Start saving defect result.
+10.53.52:188	=== Info    === 	Save defect result ends.
+12.31.54:056	=== Info    === 	Start tile big map.
+12.31.54:162	=== Info    === 	Tile big map ends.
+12.31.54:162	=== Info    === 	Start saving defect result.
+12.31.56:532	=== Info    === 	Save defect result ends.
+12.31.59:074	=== Info    === 	GC finish
+12.33.14:967	=== Info    === 	Start tile big map.
+12.33.15:068	=== Info    === 	Tile big map ends.
+12.33.15:068	=== Info    === 	Start saving defect result.
+12.33.19:483	=== Info    === 	Save defect result ends.
+12.33.19:483	=== Info    === 	Start saving AB recipe.
+12.33.19:528	=== Info    === 	Save AB recipe ends.
+12.33.21:058	=== Info    === 	GC finish
+12.38.06:097	=== Info    === 	Start tile big map.
+12.38.06:202	=== Info    === 	Tile big map ends.
+12.38.06:202	=== Info    === 	Start saving defect result.
+12.38.08:616	=== Info    === 	Save defect result ends.
+12.38.09:539	=== Info    === 	GC finish
+12.38.50:301	=== Info    === 	Start tile big map.
+12.38.50:409	=== Info    === 	Tile big map ends.
+12.38.50:409	=== Info    === 	Start saving defect result.
+12.38.53:096	=== Info    === 	Save defect result ends.
+12.38.54:670	=== Info    === 	GC finish
+12.39.08:004	=== Info    === 	Start tile big map.
+12.39.08:103	=== Info    === 	Tile big map ends.
+12.39.08:103	=== Info    === 	Start saving defect result.
+12.39.11:279	=== Info    === 	Save defect result ends.
+12.39.12:045	=== Info    === 	GC finish
+12.39.26:328	=== Info    === 	Start tile big map.
+12.39.26:432	=== Info    === 	Tile big map ends.
+12.39.26:432	=== Info    === 	Start saving defect result.
+12.39.29:392	=== Info    === 	Save defect result ends.
+12.39.30:069	=== Info    === 	GC finish
+12.40.03:992	=== Info    === 	Start tile big map.
+12.40.04:090	=== Info    === 	Tile big map ends.
+12.40.04:090	=== Info    === 	Start saving defect result.
+12.40.07:307	=== Info    === 	Save defect result ends.
+12.40.08:096	=== Info    === 	GC finish
+12.40.23:752	=== Info    === 	Start tile big map.
+12.40.23:854	=== Info    === 	Tile big map ends.
+12.40.23:854	=== Info    === 	Start saving defect result.
+12.40.27:823	=== Info    === 	Save defect result ends.
+12.40.29:573	=== Info    === 	GC finish

@@ -1,0 +1,748 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>hdevenginedotnet</name>
+    </assembly>
+    <members>
+        <member name="T:HalconDotNet.HDevProcedureCall">
+            <summary>Manages an execution instance for a local or external procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.#ctor(HalconDotNet.HDevProcedure)">
+            <summary>Creates a procedure call for the specified procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.IsInitialized">
+            <summary>Returns true if this class has not yet been disposed</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetProcedure">
+            <summary>Gets the procedure associated with this procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.Execute">
+            <summary>Executes the procedure</summary>    
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetWaitForDebugConnection(System.Boolean)">
+            <summary>Stops execution on first line of procedure.</summary>    
+            <remarks>
+              This is intended for debugging purposes when you wish to step
+              through a specific procedure call. It only has an effect when a
+              debug server is running and it will only stop once.
+            </remarks>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputCtrlParamTuple(System.Int32,HalconDotNet.HTuple)">
+            <summary>Sets input control parameter for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputCtrlParamTuple(System.String,HalconDotNet.HTuple)">
+            <summary>Sets input control parameter for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputCtrlParamVector(System.Int32,HalconDotNet.HTupleVector)">
+            <summary>Sets input control parameter for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputCtrlParamVector(System.String,HalconDotNet.HTupleVector)">
+            <summary>Sets input control parameter for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputIconicParamObject(System.Int32,HalconDotNet.HObject)">
+            <summary>Sets iconic input object for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputIconicParamObject(System.String,HalconDotNet.HObject)">
+            <summary>Sets iconic input object for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputIconicParamVector(System.Int32,HalconDotNet.HObjectVector)">
+            <summary>Sets input control parameter for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.SetInputIconicParamVector(System.String,HalconDotNet.HObjectVector)">
+            <summary>Sets input control parameter for procedure call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputCtrlParamTuple(System.Int32)">
+            <summary>Gets the value of an output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputCtrlParamTuple(System.String)">
+            <summary>Gets the value of an output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputCtrlParamVector(System.Int32)">
+            <summary>Gets the value of an output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputCtrlParamVector(System.String)">
+            <summary>Gets the value of an output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamObject(System.Int32)">
+            <summary>Gets the object of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamObject(System.String)">
+            <summary>Gets the object of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamVector(System.Int32)">
+            <summary>Gets the value of an output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamVector(System.String)">
+            <summary>Gets the value of an output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamImage(System.Int32)">
+            <summary>Gets the image of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamImage(System.String)">
+            <summary>Gets the image of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamRegion(System.Int32)">
+            <summary>Gets the region of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamRegion(System.String)">
+            <summary>Gets the region of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamXld(System.Int32)">
+            <summary>Gets the xld contour of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.GetOutputIconicParamXld(System.String)">
+            <summary>Gets the xld contour of an iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedureCall.Dispose">
+            <summary>Releases the resources used by this procedure call</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevProgramCall">
+            <summary>Manages an execution instance for an HDevelop program</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.#ctor(HalconDotNet.HDevProgram)">
+            <summary>Creates a program call for the specified program</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.IsInitialized">
+            <summary>Returns true if this class has not yet been disposed</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetProgram">
+            <summary>Gets the program associated with this program call</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.Execute">
+            <summary>Executes the program</summary>    
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.SetWaitForDebugConnection(System.Boolean)">
+            <summary>Stops execution on first line of program.</summary>    
+            <remarks>
+              This is intended for debugging purposes when you wish to step
+              through a specific program call. It only has an effect when a
+              debug server is running and it will only stop once.
+            </remarks>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.Reset">
+            <summary>Resets the program execution</summary>    
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetCtrlVarTuple(System.Int32)">
+            <summary>Gets the value of a control variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetCtrlVarVector(System.Int32)">
+            <summary>Gets the values of a control vector variable 
+            (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetCtrlVarTuple(System.String)">
+            <summary>Gets the value of a control variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetCtrlVarVector(System.String)">
+            <summary>Gets the values of a control vector variable 
+            (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarObject(System.Int32)">
+            <summary>Gets the object of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarVector(System.Int32)">
+            <summary>Gets the values of an iconic vector variable 
+            (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarObject(System.String)">
+            <summary>Gets the object of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarVector(System.String)">
+            <summary>Gets the values of an iconic vector variable 
+            (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarImage(System.Int32)">
+            <summary>Gets the image of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarImage(System.String)">
+            <summary>Gets the image of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarRegion(System.Int32)">
+            <summary>Gets the region of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarRegion(System.String)">
+            <summary>Gets the region of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarXld(System.Int32)">
+            <summary>Gets the xld contour of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.GetIconicVarXld(System.String)">
+            <summary>Gets the xld contour of an iconic variable (in main)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgramCall.Dispose">
+            <summary>Releases the resources used by this engine</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevProcedure">
+            <summary>Encapsulates a local or external procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.#ctor">
+            <summary>Creates an empty procedure instance</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.#ctor(System.String)">
+            <summary>Loads an external procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.#ctor(System.String,System.String)">
+            <summary>Loads a local procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.#ctor(HalconDotNet.HDevProgram,System.String)">
+            <summary>Loads a local procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.LoadProcedure(System.String)">
+            <summary>Loads an external procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.LoadProcedure(System.String,System.String)">
+            <summary>Loads a local procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.LoadProcedure(HalconDotNet.HDevProgram,System.String)">
+            <summary>Loads a local procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.CreateCall">
+            <summary>Creates a procedure call for this procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.Execute">
+            <summary>Create and execute a procedure call for this procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.IsLoaded">
+            <summary>Check the load state of the procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.IsInitialized">
+            <summary>Returns true if this class has not yet been disposed</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputIconicParamNames">
+            <summary>Gets the names of the iconic input parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputIconicParamNames">
+            <summary>Gets the names of the iconic output parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputCtrlParamNames">
+            <summary>Gets the names of the input control parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputCtrlParamNames">
+            <summary>Gets the names of the output control parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputIconicParamDimensions">
+            <summary>Gets the dimensions of the iconic input parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputIconicParamDimensions">
+            <summary>Gets the dimensions of the iconic output parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputCtrlParamDimensions">
+            <summary>Gets the dimensions of the input control parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputCtrlParamDimensions">
+            <summary>Gets the dimensions of the output control parameters</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputIconicParamCount">
+            <summary>
+              Gets the number of parameters used for iconic input objects.
+              Note that parameters are numbered from 1 to count.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputIconicParamCount">
+            <summary>
+              Gets the number of parameters used for iconic output objects.
+              Note that parameters are numbered from 1 to count.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputCtrlParamCount">
+            <summary>
+              Gets the number of parameters used for input control values.
+              Note that parameters are numbered from 1 to count.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputCtrlParamCount">
+            <summary>
+              Gets the number of parameters used for output control values.
+              Note that parameters are numbered from 1 to count.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputIconicParamName(System.Int32)">
+            <summary>Gets the name of a specific iconic input parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputIconicParamName(System.Int32)">
+            <summary>Gets the name of a specific iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputCtrlParamName(System.Int32)">
+            <summary>Gets the name of a specific input control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputCtrlParamName(System.Int32)">
+            <summary>Gets the name of a specific output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputIconicParamDimension(System.Int32)">
+            <summary>Gets the dimension of a specific 
+            iconic input parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputIconicParamDimension(System.Int32)">
+            <summary>Gets the dimension of a specific 
+            iconic output parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputCtrlParamDimension(System.Int32)">
+            <summary>Gets the dimension of a specific 
+            input control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputCtrlParamDimension(System.Int32)">
+            <summary>Gets the dimension of a specific 
+            output control parameter</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetUsedProcedureNames">
+            <summary>Returns the names of all refered procedures</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.CompileUsedProcedures">
+            <summary>Compile all procedures that are used by the program and that
+            can be compiled with a just-in-time compiler.
+            The method returns true when all used procedures could be compiled by
+            the just-in-time compiler.
+            Procedures that could not be compiled are called normally by the
+            HDevEngine interpreter.
+            To check which procedure could not be compiled and what the reason is
+            for that start HDevelop and check there the compilation states.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInfo(System.String)">
+            <summary>Returns the info of the refered procedure docu slot</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetParamInfo(System.String,System.String)">
+            <summary>Returns the info of the refered parameter docu slot</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputIconicParamInfo(System.Int32,System.String)">
+            <summary>Returns the info of the refered parameter docu slot</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputIconicParamInfo(System.Int32,System.String)">
+            <summary>Returns the info of the refered parameter docu slot</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetInputCtrlParamInfo(System.Int32,System.String)">
+            <summary>Returns the info of the refered parameter docu slot</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.GetOutputCtrlParamInfo(System.Int32,System.String)">
+            <summary>Returns the info of the refered parameter docu slot</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.QueryInfo">
+            <summary>Returns all possible slots of the procedure docu</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.QueryParamInfo">
+            <summary>Returns all possible slots of the parameter docu</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProcedure.Dispose">
+            <summary>Releases the resources used by this engine</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevProcedure.Name">
+            <summary>The name of the procedure</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevProcedure.ShortDescription">
+            <summary>The short description of the procedure</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevEngine">
+            <summary>Executes HDevelop programs and procedures at run time</summary>
+            <remarks>
+              The hdevenginecpp.dll is required for using this class.
+            </remarks>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.#ctor">
+            <summary>Creates a new instance of HDevEngine</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.IsInitialized">
+            <summary>Returns true if this class has not yet been disposed</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.SetEngineAttribute(System.String,HalconDotNet.HTuple)">
+            <summary>Changes a global setting of the engine</summary>
+            <param name="name">
+              The name of the attribute, e.g. "ignore_invalid_lines"
+              or "ignore_unresolved_lines"
+            </param>
+            <param name="attributeValue">The new value of the attribute</param>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetEngineAttribute(System.String)">
+            <summary>Queries a global setting of the engine</summary>
+            <param name="name">
+              The name of the attribute, e.g. "ignore_invalid_lines"
+              or "ignore_unresolved_lines"
+            </param>
+            <returns>The current value of the attribute</returns>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.StartDebugServer">
+            <summary>
+               Starts the debug server that allows to attach HDevelop as
+               as debugger to step through engine code.
+            </summary>
+            <remarks>
+               With default settings server waits on port 7786 and engine runs
+               normally until HDevelop is connected and F9 is pressed to stop
+               execution.
+             </remarks>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.StopDebugServer">
+            <summary>Stops the debug server (resuming execution if stopped)</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.SetProcedurePath(System.String)">
+            <summary>Sets the path for loading external procedures</summary>
+            <param name="path">List of directories in the path format of the operating system</param>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.AddProcedurePath(System.String)">
+            <summary>Appends to the path for loading external procedures</summary>
+            <param name="path">List of directories in the path format of the operating system</param>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetProcedureNames">
+            <summary>Returns the names of available procedures</summary>
+            <returns>String tuple containing the procedure names</returns>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetLoadedProcedureNames">
+            <summary>Returns the names of loaded procedures</summary>
+            <returns>String tuple containing the procedure names</returns>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.UnloadProcedure(System.String)">
+            <summary>Unloads a previously loaded procedure</summary>
+            <param name="name">The name of the procedure to unload</param>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.UnloadAllProcedures">
+            <summary>Unloads all previously loaded procedure</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalIconicVarNames">
+            <summary>Returns the names of all global iconic variables</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalCtrlVarNames">
+            <summary>Returns the names of all global control variables</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalIconicVarDimension(System.String)">
+            <summary>Gets the dimension of a global control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalCtrlVarDimension(System.String)">
+            <summary>Gets the dimension of a global control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.SetGlobalCtrlVarTuple(System.String,HalconDotNet.HTuple)">
+            <summary>Sets the value of a global control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.SetGlobalCtrlVarVector(System.String,HalconDotNet.HTupleVector)">
+            <summary>Sets the value of a global control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.SetGlobalIconicVarObject(System.String,HalconDotNet.HObject)">
+            <summary>Sets the value of a global iconic variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.SetGlobalIconicVarVector(System.String,HalconDotNet.HObjectVector)">
+            <summary>Sets the value of a global iconic variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalCtrlVarTuple(System.String)">
+            <summary>Gets the value of a global control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalCtrlVarVector(System.String)">
+            <summary>Gets the value of a global control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalIconicVarObject(System.String)">
+            <summary>Gets the value of a global iconic variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalIconicVarVector(System.String)">
+            <summary>Gets the value of a global iconic variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalIconicVarImage(System.String)">
+            <summary>Gets the value of a global iconic image variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalIconicVarRegion(System.String)">
+            <summary>Gets the value of a global iconic region variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.GetGlobalIconicVarXld(System.String)">
+            <summary>Gets the value of a global iconic XLD variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.SetHDevOperators(HalconDotNet.IHDevOperators)">
+            <summary>Registers your implementation of visualization operators</summary>
+            <param name="implementation">
+              An object implementing the IHDevOperators interface
+            </param>
+        </member>
+        <member name="M:HalconDotNet.HDevEngine.Dispose">
+            <summary>Releases the resources used by this engine</summary>
+        </member>
+        <member name="T:HalconDotNet.IHDevOperators">
+            <summary>Interface for implementation of HDevelop operators</summary>
+            <remarks>
+              This is intended for use with HDevEngine.SetHDevOperators.
+              Note that two implementations are already provided ready-to-use,
+              namely HDevOpFixedWindowImpl and HDevOpMultiWindowImpl.
+            </remarks>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevOpenWindow(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple@)">
+            <summary>Open a graphics window.</summary>
+            <param name="row">Row index of upper left corner. Default: 0</param>
+            <param name="column">Column index of upper left corner. Default: 0</param>
+            <param name="width">Width of the window. Default: 256</param>
+            <param name="height">Height of the window. Default: 256</param>
+            <param name="background">Color of the background of the new window. Default: "black"</param>
+            <param name="windowHandle">Window identifier.</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevCloseWindow">
+            <summary>Close the active graphics window.</summary>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetWindow(HalconDotNet.HTuple)">
+            <summary>Activate a graphics window.</summary>
+            <param name="windowHandle">Window identifier.</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevGetWindow(HalconDotNet.HTuple@)">
+            <summary>Return the identifier of the activate graphics window.</summary>
+            <param name="windowHandle">Window identifier.</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetWindowExtents(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple)">
+            <summary>Change position and size of a graphics window.</summary>
+            <param name="row">Row index of upper left corner. Default: 0</param>
+            <param name="column">Column index of upper left corner. Default: 0</param>
+            <param name="width">Width of the window. Default: 256</param>
+            <param name="height">Height of the window. Default: 256</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetPart(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple)">
+            <summary>Modify the displayed image part.</summary>
+            <param name="row1">Row of the upper left corner of the chosen image part. Default: 0</param>
+            <param name="column1">Column of the upper left corner of the chosen image part. Default: 0</param>
+            <param name="row2">Row of the lower right corner of the chosen image part. Default: 128</param>
+            <param name="column2">Column of the lower right corner of the chosen image part. Default: 128</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevClearWindow">
+            <summary>Clear the active graphics window.</summary>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevDisplay(HalconDotNet.HObject)">
+            <summary>Displays image objects in the current graphics window.</summary>
+            <param name="objectVal">
+              Iconic object to be displayed. Attention! This will be disposed
+              automatically by HDevEngine/.NET after DevDisplay returns.
+              Do not keep a reference!
+            </param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevDispText(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple)">
+            <summary>Displays text in the graphics window.</summary>
+            <param name="text">A tuple of strings containing the text message to be
+                               displayed. Each value of the tuple will be displayed in a single line.</param>
+            <param name="coordSystem">If set to 'window', the text position is given with respect to
+                         the window coordinate system.If set to 'image', image
+                         coordinates are used (this may be useful in zoomed images).</param>
+            <param name="row">he row coordinate of the desired text position.</param>
+            <param name="column">The column coordinate of the desired text position.</param>
+            <param name="color">A tuple of strings defining the colors of the texts.</param>
+            <param name="genParamNames">Generic parameter names.</param>
+            <param name="genParamValues">Generic parameter values.</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetDraw(HalconDotNet.HTuple)">
+            <summary>Define the region fill mode.</summary>
+            <param name="drawMode">Fill mode for region output. Default: "fill"</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetShape(HalconDotNet.HTuple)">
+            <summary>Define the region output shape.</summary>
+            <param name="shape">Region output mode. Default: "original"</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetColored(HalconDotNet.HTuple)">
+            <summary>Set multiple output colors.</summary>
+            <param name="numColors">Number of output colors. Default: 6</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetColor(HalconDotNet.HTuple)">
+            <summary>Set output color.</summary>
+            <param name="colorName">Output color names. Default: "white"</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetLut(HalconDotNet.HTuple)">
+            <summary>Set "look-up-table" (lut).</summary>
+            <param name="lutName">Name of look-up-table, values of look-up-table (RGB)  or file name. Default: "default"</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetPaint(HalconDotNet.HTuple)">
+            <summary>Define the grayvalue output mode.</summary>
+            <param name="mode">Grayvalue output name. Additional parameters possible. Default: "default"</param>
+        </member>
+        <member name="M:HalconDotNet.IHDevOperators.DevSetLineWidth(HalconDotNet.HTuple)">
+            <summary>Define the line width for region contour output.</summary>
+            <param name="lineWidth">Line width for region output in contour mode. Default: 1</param>
+        </member>
+        <member name="T:HalconDotNet.HDevOpFixedWindowImpl">
+            <summary>Convenience implementation of HDevOperators for a single window</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevOpFixedWindowImpl.activeID">
+            <summary>Dev* operators will be rerouted to this window ID</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpFixedWindowImpl.#ctor(HalconDotNet.HTuple)">
+            <summary>Creates an instance of the fixed window implementation</summary>
+            <param name="windowID">The window ID of an existing HALCON window</param>
+        </member>
+        <member name="M:HalconDotNet.HDevOpFixedWindowImpl.#ctor(HalconDotNet.HWindow)">
+            <summary>Creates an instance of the fixed window implementation</summary>
+            <param name="window">An existing HALCON window</param>
+        </member>
+        <member name="M:HalconDotNet.HDevOpFixedWindowImpl.DevOpenWindow(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple@)">
+            <summary>Does nothing except return the existing window ID</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpFixedWindowImpl.DevSetWindow(HalconDotNet.HTuple)">
+            <summary>No action</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpFixedWindowImpl.DevGetWindow(HalconDotNet.HTuple@)">
+            <summary>Does nothing except return the existing window ID</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpFixedWindowImpl.DevCloseWindow">
+            <summary>No action</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpFixedWindowImpl.DevSetWindowExtents(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple)">
+            <summary>No action</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevOpMultiWindowImpl">
+            <summary>Convenience implementation of HDevOperators managing multiple windows</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevOpMultiWindowImpl.windowIDs">
+            <summary>Window IDs of all open windows</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevOpMultiWindowImpl.fixedIDs">
+            <summary>Window IDs of all designated external windows</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevOpMultiWindowImpl.fixedUsed">
+            <summary>Flags indicating whether a fixed window is "dev-open"</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.#ctor(HalconDotNet.HTuple[])">
+            <summary>Creates an instance initially managing zero open windows</summary>
+            <param name="windowIDs">List of IDs for existing HALCON windows</param>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.#ctor(HalconDotNet.HWindow[])">
+            <summary>Creates an instance initially managing zero open windows</summary>
+            <param name="windows">List of existing HALCON windows</param>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.#ctor">
+            <summary>Creates an instance with no fixed windows</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.DevOpenWindow(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple@)">
+            <summary>Opens a window, appends window ID and sets active window</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.DevCloseWindow">
+            <summary>Closes active window, removes it from list and activates another window</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.DevSetWindow(HalconDotNet.HTuple)">
+            <summary>Sets the active window ID</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.DevGetWindow(HalconDotNet.HTuple@)">
+            <summary>Sets the active window ID</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevOpMultiWindowImpl.DevSetWindowExtents(HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple,HalconDotNet.HTuple)">
+            <summary>No action for fixed windows, adapt size otherwise</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevOperatorWrapper">
+            <summary>
+              This class wraps an object implementing IHDevOperators, registers
+              internal delegates with the HDevEngine and calls the appropriate
+              interface methods at callback time (including conversion of
+              parameters and transformation of exceptions to return codes).
+            </summary>
+        </member>
+        <member name="T:HalconDotNet.EngineAPI">
+            <summary>Communication with hdevengine.dll</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevEngineException">
+            <summary>This is raised when errors occur within HDevEngine</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevEngineException.HalconError">
+            <summary>The internal HALCON error code</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevEngineException.Category">
+            <summary>Type of exception</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevEngineException.ProcedureName">
+            <summary>Name of the originating HDevelop procedure</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevEngineException.LineText">
+            <summary>Script line in which the error occured</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevEngineException.LineNumber">
+            <summary>Script line number at which the error occured</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevEngineException.UserData">
+            <summary>User data which was added to the exception</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevEngineException.ExceptionCategory">
+            <summary>Different types of errors when using HDevEngine</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevEngineException.ExceptionCategory.Generic">
+            <summary>No special type</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevEngineException.ExceptionCategory.Input">
+            <summary>Unintialized input parameters for procedure call</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevEngineException.ExceptionCategory.Operator">
+            <summary>HALCON error while executing an operator</summary>
+        </member>
+        <member name="F:HalconDotNet.HDevEngineException.ExceptionCategory.File">
+            <summary>Problems loading scripts or procedures files</summary>
+        </member>
+        <member name="T:HalconDotNet.HDevProgram">
+            <summary>Encapsulates a loaded HDevelop program</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.#ctor">
+            <summary>Creates an empty program instance</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.#ctor(System.String)">
+            <summary>Loads an HDevelop program</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.LoadProgram(System.String)">
+            <summary>Loads an HDevelop script</summary>
+            <remarks>
+              You can use this to exceute the program or local procedures.
+            </remarks>
+            <param name="fileName">Path and file name of the HDevelop script</param>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.CreateCall">
+            <summary>Creates a program call for this program</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.Execute">
+            <summary>Create and execute a program call for this program</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.IsLoaded">
+            <summary>Check the load state of the program</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.IsInitialized">
+            <summary>Returns true if this class has not yet been disposed</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetIconicVarNames">
+            <summary>Gets the variable names used for iconic objects</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetCtrlVarNames">
+            <summary>Gets the variable names used for control values</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetIconicVarDimensions">
+            <summary>Gets the variable dimensions used for iconic objects</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetCtrlVarDimensions">
+            <summary>Gets the variable dimensions used for control values</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetIconicVarCount">
+            <summary>
+              Gets the number of variables used for iconic objects.
+              Note that variables are numbered from 1 to count.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetCtrlVarCount">
+            <summary>
+              Gets the number of variables used for control values.
+              Note that variables are numbered from 1 to count.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetIconicVarName(System.Int32)">
+            <summary>Gets the name of a specific iconic variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetCtrlVarName(System.Int32)">
+            <summary>Gets the name of a specific control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetIconicVarDimension(System.Int32)">
+            <summary>Gets the dimension of a specific iconic variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetCtrlVarDimension(System.Int32)">
+            <summary>Gets the dimension of a specific control variable</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetUsedProcedureNames">
+            <summary>Returns the names of used local and external procedures</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.CompileUsedProcedures">
+            <summary>Compile all procedures that are used by the program and that
+            can be compiled with a just-in-time compiler.
+            The method returns true when all used procedures could be compiled by
+            the just-in-time compiler.
+            Procedures that could not be compiled are called normally by the
+            HDevEngine interpreter.
+            To check which procedure could not be compiled and what the reason is
+            for that start HDevelop and check there the compilation states.
+            </summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.GetLocalProcedureNames">
+            <summary>Returns the names of all local procedures</summary>
+        </member>
+        <member name="M:HalconDotNet.HDevProgram.Dispose">
+            <summary>Releases the resources used by this engine</summary>
+        </member>
+        <member name="P:HalconDotNet.HDevProgram.Name">
+            <summary>The name of the program</summary>
+        </member>
+    </members>
+</doc>

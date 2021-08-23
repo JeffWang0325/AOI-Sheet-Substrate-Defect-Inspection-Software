@@ -1,0 +1,969 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7235D5D-94E4-41DD-8853-8004A2551BB8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeltaSubstrateInspector</RootNamespace>
+    <AssemblyName>DSI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>發行\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>delta.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Automation.BDaq4, Version=4.0.0.0, Culture=neutral, PublicKeyToken=463f5928d60183a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>src\Modules\IOModule\Automation.BDaq4.dll</HintPath>
+    </Reference>
+    <Reference Include="Automation.BDaq4.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=463f5928d60183a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>src\Modules\IOModule\Automation.BDaq4.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="clsLanguage">
+      <HintPath>..\DLL\clsLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="Create_WordPDF, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Create_WordPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="DataOverTcp">
+      <HintPath>src\Modules\TCPIP4Sorter\DataOverTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="DAVS">
+      <HintPath>..\DLL\DAVS.dll</HintPath>
+    </Reference>
+    <Reference Include="DelViviCamera">
+      <HintPath>src\Modules\DelViviAOI\DelViviCamera.dll</HintPath>
+    </Reference>
+    <Reference Include="DelViviLog">
+      <HintPath>src\Modules\DelViviAOI\DelViviLog.dll</HintPath>
+    </Reference>
+    <Reference Include="DSI_Reviewer">
+      <HintPath>src\Modules\ReviewerModule\DSI_Reviewer\bin\x64\Debug\DSI_Reviewer.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet">
+      <HintPath>C:\Program Files\MVTec\HALCON-13.0\bin\dotnet35\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="hdevenginedotnet">
+      <HintPath>C:\Program Files\MVTec\HALCON-13.0\bin\dotnet20\hdevenginedotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="IOModule, Version=1.0.0.1, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\IOModule.dll</HintPath>
+    </Reference>
+    <Reference Include="KellermanSoftware.Compare-NET-Objects, Version=4.62.0.0, Culture=neutral, PublicKeyToken=d970ace04cc85217, processorArchitecture=MSIL">
+      <HintPath>..\packages\CompareNETObjects.4.62.0\lib\net46\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Load_HDVP">
+      <HintPath>..\DLL\Load_HDVP.dll</HintPath>
+    </Reference>
+    <Reference Include="MyLibrary">
+      <HintPath>..\DLL\MyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PasswordManagement">
+      <HintPath>src\Modules\PasswordManagement\PasswordManagement\bin\Debug\PasswordManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="PM-24084R, Version=1.0.0.2, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\PM-24084R.dll</HintPath>
+    </Reference>
+    <Reference Include="Prediction, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>src\Modules\DAVS_Module\Prediction.dll</HintPath>
+    </Reference>
+    <Reference Include="StyleTabTable">
+      <HintPath>..\..\Risitanse_AOI\bin\x64\Debug\StyleTabTable.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TCPIPTool">
+      <HintPath>src\Modules\SystemModule\TCPIPTool.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOIMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOIMainForm.Designer.cs">
+      <DependentUpon>AOIMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsStaticTool.cs" />
+    <Compile Include="src\Modules\Algorithm\Algo_Image.cs" />
+    <Compile Include="src\Modules\Algorithm\Algo_Image_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\Algorithm\Algo_Image_Form.designer.cs">
+      <DependentUpon>Algo_Image_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\ConfigModule\ConfigModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\ConfigModule\ConfigModule.Designer.cs">
+      <DependentUpon>ConfigModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\DefectsResult.cs" />
+    <Compile Include="src\Modules\MessageBox_dynamic\Form_DynamicButtons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\MessageBox_dynamic\Form_DynamicButtons.designer.cs">
+      <DependentUpon>Form_DynamicButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormDAVSInsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormDAVSInsp.Designer.cs">
+      <DependentUpon>FormDAVSInsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormFeatureInsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormFeatureInsp.Designer.cs">
+      <DependentUpon>FormFeatureInsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormLaserHoleInsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormLaserHoleInsp.Designer.cs">
+      <DependentUpon>FormLaserHoleInsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormLineInsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormLineInsp.Designer.cs">
+      <DependentUpon>FormLineInsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormTextureInsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormTextureInsp.Designer.cs">
+      <DependentUpon>FormTextureInsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormThresholdInsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormThresholdInsp.Designer.cs">
+      <DependentUpon>FormThresholdInsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\clsDAVSInspMethod.cs" />
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormEditRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormEditRegion.Designer.cs">
+      <DependentUpon>FormEditRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\ProcSaveImage\clsSaveTileImgThread.cs" />
+    <Compile Include="src\Extension.cs" />
+    <Compile Include="src\FileSystem\FileSystem.cs" />
+    <Compile Include="src\MainPanels\AdvSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainPanels\AdvSet.Designer.cs">
+      <DependentUpon>AdvSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\MainPanels\LaserPositionCreate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainPanels\LaserPositionCreate.Designer.cs">
+      <DependentUpon>LaserPositionCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\MainPanels\LaserPositionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainPanels\LaserPositionView.designer.cs">
+      <DependentUpon>LaserPositionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\MainPanels\LaserSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainPanels\LaserSetting.Designer.cs">
+      <DependentUpon>LaserSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\MainPanels\PositionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainPanels\PositionView.Designer.cs">
+      <DependentUpon>PositionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\MotionModule\MovementPos.cs" />
+    <Compile Include="src\Modules\NewInspectModule\DefaultInspect\DefaultInspect.cs" />
+    <Compile Include="src\Modules\NewInspectModule\DefaultInspect\DefaultInspectRole.cs" />
+    <Compile Include="src\Modules\NewInspectModule\DefaultInspect\DefaultInspectUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\DefaultInspect\DefaultInspectUC.Designer.cs">
+      <DependentUpon>DefaultInspectUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\BlackBlobCL.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\BlackCrackFL.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\BrightBlobBL.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\HTResistor0201.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\HTResistor0201Role.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\HTResistor0201UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\HTResistor0201UC.Designer.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\UCButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\UCTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\WhiteBlobFL.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0201\WhiteCrackFL.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0402\HTResistor0402.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0402\HTResistor0402Role.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0402\HTResistor0402UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0402\HTResistor0402UC.Designer.cs" />
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0402\UCButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\HTResistor0402\UCTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\clsSaveImg.cs" />
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormMultiThreshold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormMultiThreshold.Designer.cs">
+      <DependentUpon>FormMultiThreshold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormThresholdAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormThresholdAdjust.Designer.cs">
+      <DependentUpon>FormThresholdAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\InductanceInsp.cs" />
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\InductanceInspRole.cs" />
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\InductanceInspUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\InductanceInsp\InductanceInspUC.Designer.cs">
+      <DependentUpon>InductanceInspUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\PatternCheck\PatternCheck.cs" />
+    <Compile Include="src\Modules\NewInspectModule\PatternCheck\PatternCheckRole.cs" />
+    <Compile Include="src\Modules\NewInspectModule\PatternCheck\PatternCheckUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\PatternCheck\PatternCheckUC.Designer.cs">
+      <DependentUpon>PatternCheckUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\ResistPanel\clsSaveImg.cs" />
+    <Compile Include="src\Modules\NewInspectModule\ResistPanel\ResistPanel.cs" />
+    <Compile Include="src\Modules\NewInspectModule\ResistPanel\ResistPanelRole.cs" />
+    <Compile Include="src\Modules\NewInspectModule\ResistPanel\ResistPanelUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Modules\NewInspectModule\ResistPanel\ResistPanelUC.designer.cs">
+      <DependentUpon>ResistPanelUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\PositionModule\BigmapShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\PositionModule\BigmapShowForm.Designer.cs">
+      <DependentUpon>BigmapShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\PositionModule\LaserPositionModel.cs" />
+    <Compile Include="src\Modules\PositionModule\PositionModel.cs" />
+    <Compile Include="src\Modules\ProgressBar\clsProgressbar.cs" />
+    <Compile Include="src\Modules\ProgressBar\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\ProgressBar\ProgressDialog.designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\StorageModule\StorageManager.cs" />
+    <Compile Include="src\Modules\SystemModel\Running.cs" />
+    <Compile Include="src\Modules\SystemModule\SystemStatus.cs" />
+    <Compile Include="src\Modules\SystemModule\TCPIPCtrl.cs" />
+    <Compile Include="src\Modules\TCPIP4Sorter\FormTCPIPSorter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\TCPIP4Sorter\FormTCPIPSorter.Designer.cs">
+      <DependentUpon>FormTCPIPSorter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\TCPIP4Sorter\HandshakeDataPacks.cs" />
+    <Compile Include="src\PositionMethod\AffineMethod\Class_AffineTrans_Method_2.cs" />
+    <Compile Include="src\PositionMethod\AffineMethod\UserControl_AffineTrans_2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\AffineMethod\UserControl_AffineTrans_2.Designer.cs">
+      <DependentUpon>UserControl_AffineTrans_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\CellMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\CellMapForm.Designer.cs">
+      <DependentUpon>CellMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\DispWindow_AICellImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\DispWindow_AICellImg.Designer.cs">
+      <DependentUpon>DispWindow_AICellImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\FormCellAlignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\FormCellAlignment.Designer.cs">
+      <DependentUpon>FormCellAlignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\FormThresholdAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\FormThresholdAdjust.Designer.cs">
+      <DependentUpon>FormThresholdAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\Form_editBatchTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\Form_editBatchTest.Designer.cs">
+      <DependentUpon>Form_editBatchTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\Form_editDefect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\Form_editDefect.Designer.cs">
+      <DependentUpon>Form_editDefect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\LaserLocateMethod.cs" />
+    <Compile Include="src\PositionMethod\LocateMethod\Location\LaserLocationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\LaserLocationUC.designer.cs">
+      <DependentUpon>LaserLocationUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\LocateMethod.cs" />
+    <Compile Include="src\PositionMethod\LocateMethod\Location\LocationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Location\LocationUC.Designer.cs">
+      <DependentUpon>LocationUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Rotation\AngleAffineUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Rotation\AngleAffineUC.Designer.cs">
+      <DependentUpon>AngleAffineUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\LocateMethod\Rotation\AngleAffineMethod.cs" />
+    <Compile Include="src\SettingAndRole\UserPermission\FormPermissionSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UserPermission\FormPermissionSetting.Designer.cs">
+      <DependentUpon>FormPermissionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SystemSource\MapSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SystemSource\MapSettingForm.Designer.cs">
+      <DependentUpon>MapSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SystemSource\Recipe\Recipe.cs" />
+    <Compile Include="src\FileSystem\StaticFile\CSVFileManager.cs" />
+    <Compile Include="src\FileSystem\StaticFile\FileManager.cs" />
+    <Compile Include="src\Modules\CaptureModule\CaptureModel.cs" />
+    <Compile Include="src\Modules\InspectModule\ImageProcess\AfineTransform1.cs" />
+    <Compile Include="src\Modules\ResultModule\ImageShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Modules\ResultModule\ImageShowForm.Designer.cs">
+      <DependentUpon>ImageShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\ResultModule\MapItem.cs" />
+    <Compile Include="src\Modules\ResultModule\Record.cs" />
+    <Compile Include="src\Modules\ResultModule\StaticBoard.cs" />
+    <Compile Include="src\SettingAndRole\ParamPanels\ParamMaskSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\ParamPanels\ParamMaskSetting.Designer.cs">
+      <DependentUpon>ParamMaskSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\ParamPanels\ParamSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\ParamPanels\ParamSetting.Designer.cs">
+      <DependentUpon>ParamSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\PositionAffineUC\AffineTrans1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\PositionAffineUC\AffineTrans1.Designer.cs">
+      <DependentUpon>AffineTrans1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\PositionSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\PositionSetting.Designer.cs">
+      <DependentUpon>PositionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\RolePreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\RolePreviewForm.Designer.cs">
+      <DependentUpon>RolePreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\ColorSpaceSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\ColorSpaceSetup.Designer.cs">
+      <DependentUpon>ColorSpaceSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\ImageBufferItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\ImageBufferItem.Designer.cs">
+      <DependentUpon>ImageBufferItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\ImageBufferPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\ImageBufferPreview.Designer.cs">
+      <DependentUpon>ImageBufferPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\IRoleItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\IRoleItem.Designer.cs">
+      <DependentUpon>IRoleItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\IRoleSetPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\IRoleSetPreview.Designer.cs">
+      <DependentUpon>IRoleSetPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\IThresholdCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\SettingAndRole\UC\IThresholdCtrl.Designer.cs">
+      <DependentUpon>IThresholdCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\MainPanels\InspectionView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainPanels\InspectionView.Designer.cs">
+      <DependentUpon>InspectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\MainPanels\ResultPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\MainPanels\ResultPanel.Designer.cs">
+      <DependentUpon>ResultPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Modules\CaptureModule\Camera.cs" />
+    <Compile Include="src\Modules\CaptureModule\CameraModule.cs" />
+    <Compile Include="src\Modules\CaptureModule\SimulationCamera.cs" />
+    <Compile Include="src\Modules\Chip.cs" />
+    <Compile Include="src\Modules\Defect.cs" />
+    <Compile Include="src\Modules\InspectModule\OperateEngine.cs" />
+    <Compile Include="src\Modules\InspectModule\OperateMethods\OperateMethod.cs" />
+    <Compile Include="src\Modules\LightModule\LightModel.cs" />
+    <Compile Include="src\Modules\ResultModule\DefectMap.cs" />
+    <Compile Include="src\Modules\ResultModule\ResultManager.cs" />
+    <Compile Include="src\Modules\ImageObj.cs" />
+    <Compile Include="src\Modules\MotionModule\gts.cs" />
+    <Compile Include="src\Modules\MotionModule\Motion.cs" />
+    <Compile Include="src\Preference\InspectModelCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Preference\InspectModelCreateForm.Designer.cs">
+      <DependentUpon>InspectModelCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\InspectModelSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Preference\InspectModelSetting.Designer.cs">
+      <DependentUpon>InspectModelSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\LightParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Preference\LightParamForm.Designer.cs">
+      <DependentUpon>LightParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\LightSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Preference\LightSetting.Designer.cs">
+      <DependentUpon>LightSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\MoveSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Preference\MoveSetting.Designer.cs">
+      <DependentUpon>MoveSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\Preference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Preference\Preference.Designer.cs">
+      <DependentUpon>Preference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\SystemSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Preference\SystemSetting.Designer.cs" />
+    <Compile Include="src\Modules\InspectModule\InspectModel.cs" />
+    <Compile Include="src\Modules\InspectModule\InspectOperator.cs" />
+    <Compile Include="src\PositionMethod\PatternMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\PatternMatch.Designer.cs">
+      <DependentUpon>PatternMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PositionMethod\VirtualSegment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PositionMethod\VirtualSegment.Designer.cs">
+      <DependentUpon>VirtualSegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\UC\DigitalIOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Preference\UC\DigitalIOForm.designer.cs">
+      <DependentUpon>DigitalIOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\UC\GoogolMotionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Preference\UC\GoogolMotionForm.Designer.cs">
+      <DependentUpon>GoogolMotionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Preference\UC\MotionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Preference\UC\MotionControl.Designer.cs">
+      <DependentUpon>MotionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Roles\InspectRole.cs" />
+    <Compile Include="src\PositionMethod\Method.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\SystemSource\Recipe\RecipeSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SystemSource\Recipe\RecipeSelectForm.Designer.cs">
+      <DependentUpon>RecipeSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\SystemSource\WorkSheet\WorkSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\SystemSource\WorkSheet\WorkSheetForm.Designer.cs">
+      <DependentUpon>WorkSheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\UIControl\InspectResultUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\UIControl\InspectResultUI.Designer.cs">
+      <DependentUpon>InspectResultUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\UIControl\ToDoItemUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\UIControl\ToDoItem.Designer.cs">
+      <DependentUpon>ToDoItemUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AOIMainForm.resx">
+      <DependentUpon>AOIMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainPanels\AdvSet.resx">
+      <DependentUpon>AdvSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainPanels\LaserPositionCreate.resx">
+      <DependentUpon>LaserPositionCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainPanels\LaserPositionView.resx">
+      <DependentUpon>LaserPositionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainPanels\LaserSetting.resx">
+      <DependentUpon>LaserSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainPanels\PositionView.resx">
+      <DependentUpon>PositionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\Algorithm\Algo_Image_Form.resx">
+      <DependentUpon>Algo_Image_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\ConfigModule\ConfigModule.resx">
+      <DependentUpon>ConfigModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\MessageBox_dynamic\Form_DynamicButtons.resx">
+      <DependentUpon>Form_DynamicButtons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\DefaultInspect\DefaultInspectUC.resx">
+      <DependentUpon>DefaultInspectUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\HTResistor0201\HTResistor0201UC.resx" />
+    <EmbeddedResource Include="src\Modules\NewInspectModule\HTResistor0402\HTResistor0402UC.resx" />
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormDAVSInsp.resx">
+      <DependentUpon>FormDAVSInsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormFeatureInsp.resx">
+      <DependentUpon>FormFeatureInsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormLaserHoleInsp.resx">
+      <DependentUpon>FormLaserHoleInsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormLineInsp.resx">
+      <DependentUpon>FormLineInsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormTextureInsp.resx">
+      <DependentUpon>FormTextureInsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Algorithm\FormThresholdInsp.resx">
+      <DependentUpon>FormThresholdInsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormEditRegion.resx">
+      <DependentUpon>FormEditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormMultiThreshold.resx">
+      <DependentUpon>FormMultiThreshold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\Tool\FormThresholdAdjust.resx">
+      <DependentUpon>FormThresholdAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\InductanceInsp\InductanceInspUC.resx">
+      <DependentUpon>InductanceInspUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\PatternCheck\PatternCheckUC.resx">
+      <DependentUpon>PatternCheckUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\NewInspectModule\ResistPanel\ResistPanelUC.resx">
+      <DependentUpon>ResistPanelUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\PositionModule\BigmapShowForm.resx">
+      <DependentUpon>BigmapShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\ProgressBar\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\ResultModule\ImageShowForm.resx">
+      <DependentUpon>ImageShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Modules\TCPIP4Sorter\FormTCPIPSorter.resx">
+      <DependentUpon>FormTCPIPSorter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\AffineMethod\UserControl_AffineTrans_2.resx">
+      <DependentUpon>UserControl_AffineTrans_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\CellMapForm.resx">
+      <DependentUpon>CellMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\DispWindow_AICellImg.resx">
+      <DependentUpon>DispWindow_AICellImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\FormCellAlignment.resx">
+      <DependentUpon>FormCellAlignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\FormThresholdAdjust.resx">
+      <DependentUpon>FormThresholdAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\Form_editBatchTest.resx">
+      <DependentUpon>Form_editBatchTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\Form_editDefect.resx">
+      <DependentUpon>Form_editDefect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\LaserLocationUC.resx">
+      <DependentUpon>LaserLocationUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Location\LocationUC.resx">
+      <DependentUpon>LocationUC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\LocateMethod\Rotation\AngleAffineUC.resx">
+      <DependentUpon>AngleAffineUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\ParamPanels\ParamMaskSetting.resx">
+      <DependentUpon>ParamMaskSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\ParamPanels\ParamSetting.resx">
+      <DependentUpon>ParamSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\PositionAffineUC\AffineTrans1.resx">
+      <DependentUpon>AffineTrans1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\PositionSetting.resx">
+      <DependentUpon>PositionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\RolePreviewForm.resx">
+      <DependentUpon>RolePreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\UC\ColorSpaceSetup.resx">
+      <DependentUpon>ColorSpaceSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\UC\ImageBufferItem.resx">
+      <DependentUpon>ImageBufferItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\UC\ImageBufferPreview.resx">
+      <DependentUpon>ImageBufferPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\UC\IRoleItem.resx">
+      <DependentUpon>IRoleItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\UC\IRoleSetPreview.resx">
+      <DependentUpon>IRoleSetPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\UC\IThresholdCtrl.resx">
+      <DependentUpon>IThresholdCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainPanels\InspectionView.resx">
+      <DependentUpon>InspectionView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainPanels\ResultPanel.resx">
+      <DependentUpon>ResultPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\InspectModelCreateForm.resx">
+      <DependentUpon>InspectModelCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\InspectModelSetting.resx">
+      <DependentUpon>InspectModelSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\LightParamForm.resx">
+      <DependentUpon>LightParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\LightSetting.resx">
+      <DependentUpon>LightSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\MoveSetting.resx">
+      <DependentUpon>MoveSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\Preference.resx">
+      <DependentUpon>Preference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\SystemSetting.resx" />
+    <EmbeddedResource Include="src\PositionMethod\PatternMatch.resx">
+      <DependentUpon>PatternMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PositionMethod\VirtualSegment.resx">
+      <DependentUpon>VirtualSegment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="src\Preference\UC\DigitalIOForm.resx">
+      <DependentUpon>DigitalIOForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\UC\GoogolMotionForm.resx">
+      <DependentUpon>GoogolMotionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Preference\UC\MotionControl.resx">
+      <DependentUpon>MotionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SettingAndRole\UserPermission\FormPermissionSetting.resx">
+      <DependentUpon>FormPermissionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SystemSource\MapSettingForm.resx">
+      <DependentUpon>MapSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SystemSource\Recipe\RecipeSelectForm.resx">
+      <DependentUpon>RecipeSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\SystemSource\WorkSheet\WorkSheetForm.resx">
+      <DependentUpon>WorkSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\UIControl\InspectResultUI.resx">
+      <DependentUpon>InspectResultUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\UIControl\ToDoItemUI.resx">
+      <DependentUpon>ToDoItemUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\inspection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFF_edited.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="delta.ico" />
+    <None Include="Resources\Halcon2.png" />
+    <None Include="Resources\Halcon.png" />
+    <None Include="Source\inspection_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Roles\UC\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
